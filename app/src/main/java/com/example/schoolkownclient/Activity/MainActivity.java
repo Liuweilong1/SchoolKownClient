@@ -1,8 +1,10 @@
-package com.example.schoolkownclient;
+package com.example.schoolkownclient.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.schoolkownclient.R;
 
 public class MainActivity extends AppCompatActivity {
 
