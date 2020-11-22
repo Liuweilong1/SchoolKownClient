@@ -1,4 +1,4 @@
-package com.example.schoolkownclient.Activity;
+package com.example.schoolkownclient.Activity.LoginActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
