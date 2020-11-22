@@ -108,6 +108,7 @@
             android:src="@drawable/weibo"
             android:layout_toRightOf="@id/login_qq"
             android:layout_marginLeft="50dp"/>
+        //
     </RelativeLayout>
 
 
