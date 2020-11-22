@@ -30,9 +30,10 @@
         android:background="@drawable/edit_circle_shape"/>
     <EditText
         android:id="@+id/forget_code"
-        android:layout_width="300dp"
+        android:layout_width="270dp"
         android:layout_height="wrap_content"
         android:hint="请输入验证码"
+        android:layout_marginLeft="30dp"
         android:inputType="numberPassword"
         android:layout_marginTop="20dp"
         android:layout_below="@id/forget_tel"
@@ -40,15 +41,26 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/forget_tel"
         android:text="获取验证码"
+        android:layout_marginTop="20dp"
         android:layout_toRightOf="@id/forget_code"
         android:background="@drawable/edit_circle_shape"/>
+    <EditText
+        android:id="@+id/forget_reset_pwd"
+        android:layout_width="360dp"
+        android:hint="请重新输入密码"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/forget_code"
+        android:background="@drawable/edit_circle_shape"/>
     <Button
-        android:id="@+id/login_btn_enter"
+        android:id="@+id/forget_finish"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
-        android:text="登录"
-        android:layout_below="@id/forget_code"
+        android:text="完成"
+        android:layout_below="@id/forget_reset_pwd"
         android:background="@drawable/btn_circle_shape"
         android:layout_centerHorizontal="true"
         android:textColor="#ffffff"
@@ -59,62 +71,10 @@
         android:id="@+id/r1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/login_btn_enter"
+        android:layout_below="@id/forget_finish"
         android:layout_marginTop="20dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp">
-        <TextView
-            android:id="@+id/login_txt_forget"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="忘记密码？"
-            android:textSize="17sp"
-            android:textColor="#5a96ef"
-            android:textStyle="bold"/>
-        <TextView
-            android:id="@+id/login_txt_register"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="立即注册"
-            android:textSize="17sp"
-            android:layout_alignParentRight="true"
-            android:textColor="#5a96ef"
-            android:textStyle="bold"/>
-    </RelativeLayout>
-    <TextView
-        android:id="@+id/login_txt_three"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="第三方登录"
-        android:layout_below="@id/r1"
-        android:layout_marginTop="90dp"
-        android:textSize="20sp"
-        android:gravity="center"/>
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_marginTop="30dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/login_txt_three">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toLeftOf="@id/login_qq"
-            android:layout_marginRight="50dp"
-            android:src="@drawable/weixin"/>
-        <ImageView
-            android:id="@+id/login_qq"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/qq"
-            android:layout_centerInParent="true"/>
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/weibo"
-            android:layout_toRightOf="@id/login_qq"
-            android:layout_marginLeft="50dp"/>
-        //
-    </RelativeLayout>
 
-
+    </RelativeLayout>
 </RelativeLayout>
