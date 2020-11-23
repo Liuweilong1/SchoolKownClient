@@ -18,6 +18,8 @@ import androidx.fragment.app.FragmentTabHost;
 
 import com.example.schoolkownclient.Activity.ParentFragment.CircleFragment;
 import com.example.schoolkownclient.Activity.ParentFragment.HomeFragment;
+import com.example.schoolkownclient.Activity.ParentFragment.LocationFragment;
+import com.example.schoolkownclient.Activity.ParentFragment.PersonalFragment;
 import com.example.schoolkownclient.Activity.ParentFragment.ToastFragment;
 import com.example.schoolkownclient.R;
 
@@ -50,17 +52,17 @@ public class ParentMainActivity extends AppCompatActivity {
         TabHost.TabSpec tab3=fragmentTabHost.newTabSpec("location_tab").setIndicator(getTabSpecView("location_tab","定位",R.drawable.location));
         //Class参数：类名.class,对象.getClass()，Class.forName()
         fragmentTabHost.addTab(tab3,
-                ToastFragment.class,//FirstFragment类的class对象
+                LocationFragment.class,//FirstFragment类的class对象
                 null);//传递数据时使用，不需要传递数据直接传null
         TabHost.TabSpec tab4=fragmentTabHost.newTabSpec("toast_tab").setIndicator(getTabSpecView("toast_tab","通知",R.drawable.toast));
         //Class参数：类名.class,对象.getClass()，Class.forName()
         fragmentTabHost.addTab(tab4,
-                BuyerPersonalFragment.class,//FirstFragment类的class对象
+                ToastFragment.class,//FirstFragment类的class对象
                 null);//传递数据时使用，不需要传递数据直接传null
-        TabHost.TabSpec tab5=fragmentTabHost.newTabSpec("buyer_person_tab").setIndicator(getTabSpecView("buyer_person_tab","我的中心",R.drawable.buyerpersonal1));
+        TabHost.TabSpec tab5=fragmentTabHost.newTabSpec("personal_tab").setIndicator(getTabSpecView("personal_tab","我的",R.drawable.person));
         //Class参数：类名.class,对象.getClass()，Class.forName()
         fragmentTabHost.addTab(tab5,
-                BuyerPersonalFragment.class,//FirstFragment类的class对象
+                PersonalFragment.class,//FirstFragment类的class对象
                 null);//传递数据时使用，不需要传递数据直接传null
 
         //处理fragmentTabHost的选项切换事件
@@ -69,37 +71,73 @@ public class ParentMainActivity extends AppCompatActivity {
             public void onTabChanged(String tabId) {
                 //修改图片和文字的颜色
                 switch (tabId){
-                    case "cookie_info_tab"://选中了菜系分类
-                        imageIconViewMap.get("cookie_info_tab").setImageResource(R.drawable.cookieinfo2);
-                        imageIconViewMap.get("cart_tab").setImageResource(R.drawable.cart1);
-                        imageIconViewMap.get("buyer_person_tab").setImageResource(R.drawable.buyerpersonal1);
-                        textViewMap.get("cookie_info_tab").setTextColor(getResources().getColor(R.color.colorBrown));
-                        textViewMap.get("cart_tab").setTextColor(getResources().getColor(R.color.colorGrey));
-                        textViewMap.get("buyer_person_tab").setTextColor(getResources().getColor(R.color.colorGrey));
+                    case "home_tab"://选中了菜系分类
+                        imageIconViewMap.get("home_tab").setImageResource(R.drawable.home1);
+                        imageIconViewMap.get("circle_tab").setImageResource(R.drawable.circle);
+                        imageIconViewMap.get("location_tab").setImageResource(R.drawable.location);
+                        imageIconViewMap.get("toast_tab").setImageResource(R.drawable.toast);
+                        imageIconViewMap.get("personal_tab").setImageResource(R.drawable.person);
+                        textViewMap.get("home_tab").setTextColor(getResources().getColor(R.color.colorMain));
+                        textViewMap.get("circle_tab").setTextColor(getResources().getColor(R.color.colorBlack));
+                        textViewMap.get("location_tab").setTextColor(getResources().getColor(R.color.colorBlack));
+                        textViewMap.get("toast_tab").setTextColor(getResources().getColor(R.color.colorBlack));
+                        textViewMap.get("personal_tab").setTextColor(getResources().getColor(R.color.colorBlack));
                         break;
-                    case "cart_tab":
-                        imageIconViewMap.get("cookie_info_tab").setImageResource(R.drawable.cookieinfo1);
-                        imageIconViewMap.get("cart_tab").setImageResource(R.drawable.cart2);
-                        imageIconViewMap.get("buyer_person_tab").setImageResource(R.drawable.buyerpersonal1);
-                        textViewMap.get("cookie_info_tab").setTextColor(getResources().getColor(R.color.colorGrey));
-                        textViewMap.get("cart_tab").setTextColor(getResources().getColor(R.color.colorBrown));
-                        textViewMap.get("buyer_person_tab").setTextColor(getResources().getColor(R.color.colorGrey));
+                    case "circle_tab":
+                        imageIconViewMap.get("home_tab").setImageResource(R.drawable.home);
+                        imageIconViewMap.get("circle_tab").setImageResource(R.drawable.circle1);
+                        imageIconViewMap.get("location_tab").setImageResource(R.drawable.location);
+                        imageIconViewMap.get("toast_tab").setImageResource(R.drawable.toast);
+                        imageIconViewMap.get("personal_tab").setImageResource(R.drawable.person);
+                        textViewMap.get("home_tab").setTextColor(getResources().getColor(R.color.colorBlack));
+                        textViewMap.get("circle_tab").setTextColor(getResources().getColor(R.color.colorMain));
+                        textViewMap.get("location_tab").setTextColor(getResources().getColor(R.color.colorBlack));
+                        textViewMap.get("toast_tab").setTextColor(getResources().getColor(R.color.colorBlack));
+                        textViewMap.get("personal_tab").setTextColor(getResources().getColor(R.color.colorBlack));
                         break;
-                    case "buyer_person_tab":
-                        imageIconViewMap.get("cookie_info_tab").setImageResource(R.drawable.cookieinfo1);
-                        imageIconViewMap.get("cart_tab").setImageResource(R.drawable.cart1);
-                        imageIconViewMap.get("buyer_person_tab").setImageResource(R.drawable.buyerpersonal2);
-                        textViewMap.get("cookie_info_tab").setTextColor(getResources().getColor(R.color.colorGrey));
-                        textViewMap.get("cart_tab").setTextColor(getResources().getColor(R.color.colorGrey));
-                        textViewMap.get("buyer_person_tab").setTextColor(getResources().getColor(R.color.colorBrown));
+                    case "location_tab":
+                        imageIconViewMap.get("home_tab").setImageResource(R.drawable.home);
+                        imageIconViewMap.get("circle_tab").setImageResource(R.drawable.circle);
+                        imageIconViewMap.get("location_tab").setImageResource(R.drawable.location1);
+                        imageIconViewMap.get("toast_tab").setImageResource(R.drawable.toast);
+                        imageIconViewMap.get("personal_tab").setImageResource(R.drawable.person);
+                        textViewMap.get("home_tab").setTextColor(getResources().getColor(R.color.colorBlack));
+                        textViewMap.get("circle_tab").setTextColor(getResources().getColor(R.color.colorMain));
+                        textViewMap.get("location_tab").setTextColor(getResources().getColor(R.color.colorBlack));
+                        textViewMap.get("toast_tab").setTextColor(getResources().getColor(R.color.colorBlack));
+                        textViewMap.get("personal_tab").setTextColor(getResources().getColor(R.color.colorBlack));
+                        break;
+                    case "toast_tab":
+                        imageIconViewMap.get("home_tab").setImageResource(R.drawable.home);
+                        imageIconViewMap.get("circle_tab").setImageResource(R.drawable.circle);
+                        imageIconViewMap.get("location_tab").setImageResource(R.drawable.location);
+                        imageIconViewMap.get("toast_tab").setImageResource(R.drawable.toast1);
+                        imageIconViewMap.get("personal_tab").setImageResource(R.drawable.person);
+                        textViewMap.get("home_tab").setTextColor(getResources().getColor(R.color.colorBlack));
+                        textViewMap.get("circle_tab").setTextColor(getResources().getColor(R.color.colorMain));
+                        textViewMap.get("location_tab").setTextColor(getResources().getColor(R.color.colorBlack));
+                        textViewMap.get("toast_tab").setTextColor(getResources().getColor(R.color.colorBlack));
+                        textViewMap.get("personal_tab").setTextColor(getResources().getColor(R.color.colorBlack));
+                        break;
+                    case "personal_tab":
+                        imageIconViewMap.get("home_tab").setImageResource(R.drawable.home);
+                        imageIconViewMap.get("circle_tab").setImageResource(R.drawable.circle);
+                        imageIconViewMap.get("location_tab").setImageResource(R.drawable.location);
+                        imageIconViewMap.get("toast_tab").setImageResource(R.drawable.toast);
+                        imageIconViewMap.get("personal_tab").setImageResource(R.drawable.person1);
+                        textViewMap.get("home_tab").setTextColor(getResources().getColor(R.color.colorBlack));
+                        textViewMap.get("circle_tab").setTextColor(getResources().getColor(R.color.colorMain));
+                        textViewMap.get("location_tab").setTextColor(getResources().getColor(R.color.colorBlack));
+                        textViewMap.get("toast_tab").setTextColor(getResources().getColor(R.color.colorBlack));
+                        textViewMap.get("personal_tab").setTextColor(getResources().getColor(R.color.colorBlack));
                         break;
                 }
             }
         });
         //设置默认选中的标签页:参数是下标
         fragmentTabHost.setCurrentTab(0);
-        imageIconViewMap.get("cookie_info_tab").setImageResource(R.drawable.cookieinfo2);
-        textViewMap.get("cookie_info_tab").setTextColor(getResources().getColor(R.color.colorBrown));
+        imageIconViewMap.get("home_tab").setImageResource(R.drawable.home1);
+        textViewMap.get("home_tab").setTextColor(getResources().getColor(R.color.colorMain));
     }
     public View getTabSpecView(String tag, String title, int drawable){
         View view= getLayoutInflater().inflate(R.layout.tab_spec_layout,null);
