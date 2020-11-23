@@ -3,27 +3,47 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android" >
 
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/l1"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:background="@color/colorMain"
-        android:orientation="horizontal">
+        android:background="@color/colorMain">
         <TextView
             android:id="@+id/home_top_school"
             android:layout_width="120dp"
             android:layout_height="wrap_content"
-            android:text="未加入学校"
+            android:text="冀英小学"
             android:textSize="22sp"
             android:textColor="#ffffff"
             android:textStyle="bold"
-            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true"
             android:layout_marginLeft="14dp"/>
-        <SearchView
-            android:id="@+id/searchView"
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/hometoast"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:scaleType="fitCenter"/>
+    </RelativeLayout>
+    <SearchView
+        android:layout_below="@id/l1"
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:queryHint="请输入搜索关键词" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/searchView">
+        <com.youth.banner.Banner
+            android:id="@+id/home_banner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:iconifiedByDefault="false"
-            android:queryHint="请输入关键词"
-            android:searchIcon="@drawable/search"/>
+            android:layout_height="170dp"
+            ></com.youth.banner.Banner>
     </LinearLayout>
+
 </RelativeLayout>
