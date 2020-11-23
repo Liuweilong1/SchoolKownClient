@@ -37,6 +37,8 @@ public class NotActivity extends AppCompatActivity {
         TabHost.TabSpec tab2 = fragmentTabHost.newTabSpec("secound_tab")
                 .setIndicator(getTabSpecView("secound_tab","私信",R.drawable.not2));
         fragmentTabHost.addTab(tab2,MessageFragment.class,null);
+
+        fragmentTabHost.setCurrentTab(0);
     }
 
     public View getTabSpecView(String tag, String tiltle, int drawable){
