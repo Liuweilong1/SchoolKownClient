@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".Activity.ParentMainActivity"></activity>
         <activity android:name=".Activity.MyClassActivity.ChatActivity" />
+        <activity android:name=".Activity.NotificationActivity.NotActivity"/>
         <activity android:name=".Activity.MyClassActivity.MemberActivity" />
         <activity android:name=".Activity.LoginActivity.RegisterActivity" />
         <activity android:name=".Activity.LoginActivity.ForgetPwdActivity" />
