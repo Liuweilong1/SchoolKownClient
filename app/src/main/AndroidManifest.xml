@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Activity.ParentMainActivity"></activity>
         <activity android:name=".Activity.MyClassActivity.ChatActivity" />
         <activity android:name=".Activity.MyClassActivity.MemberActivity" />
         <activity android:name=".Activity.LoginActivity.RegisterActivity" />
