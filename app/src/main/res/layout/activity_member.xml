@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+<LinearLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.MyClassActivity.MemberActivity">
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#6f79ff">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我的班级"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="学生家长"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/textview_border"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:divider="#000000"
+        android:dividerHeight="2dp"/>
+</LinearLayout>
