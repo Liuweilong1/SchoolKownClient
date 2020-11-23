@@ -8,7 +8,7 @@
     <android.androidx.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
+        android:background="@color/colorMain"
         android:id="@+id/toolbar_fragment_personal"
         app:title="个人中心"
 
@@ -179,7 +179,7 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 android:src="@drawable/history"
                 android:layout_marginLeft="20dp"
-                android:layout_width="40dp"
+                android:layout_width="30dp"
                 android:layout_height="match_parent" />
             <TextView
                 android:text="浏览历史"
@@ -210,7 +210,7 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 android:src="@drawable/phone"
                 android:layout_marginLeft="20dp"
-                android:layout_width="40dp"
+                android:layout_width="30dp"
                 android:layout_height="match_parent" />
             <TextView
                 android:text="使用反馈"
@@ -243,7 +243,7 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 android:src="@drawable/setup"
                 android:layout_marginLeft="20dp"
-                android:layout_width="40dp"
+                android:layout_width="30dp"
                 android:layout_height="match_parent" />
             <TextView
                 android:text="设置"
@@ -273,7 +273,7 @@
             <de.hdodenhof.circleimageview.CircleImageView
                 android:src="@drawable/banben"
                 android:layout_marginLeft="20dp"
-                android:layout_width="40dp"
+                android:layout_width="30dp"
                 android:layout_height="match_parent" />
             <TextView
                 android:text="版本"
