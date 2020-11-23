@@ -102,8 +102,8 @@ public class ParentMainActivity extends AppCompatActivity {
                         imageIconViewMap.get("toast_tab").setImageResource(R.drawable.toast);
                         imageIconViewMap.get("personal_tab").setImageResource(R.drawable.person);
                         textViewMap.get("home_tab").setTextColor(getResources().getColor(R.color.colorBlack));
-                        textViewMap.get("circle_tab").setTextColor(getResources().getColor(R.color.colorMain));
-                        textViewMap.get("location_tab").setTextColor(getResources().getColor(R.color.colorBlack));
+                        textViewMap.get("circle_tab").setTextColor(getResources().getColor(R.color.colorBlack));
+                        textViewMap.get("location_tab").setTextColor(getResources().getColor(R.color.colorMain));
                         textViewMap.get("toast_tab").setTextColor(getResources().getColor(R.color.colorBlack));
                         textViewMap.get("personal_tab").setTextColor(getResources().getColor(R.color.colorBlack));
                         break;
@@ -114,9 +114,9 @@ public class ParentMainActivity extends AppCompatActivity {
                         imageIconViewMap.get("toast_tab").setImageResource(R.drawable.toast1);
                         imageIconViewMap.get("personal_tab").setImageResource(R.drawable.person);
                         textViewMap.get("home_tab").setTextColor(getResources().getColor(R.color.colorBlack));
-                        textViewMap.get("circle_tab").setTextColor(getResources().getColor(R.color.colorMain));
+                        textViewMap.get("circle_tab").setTextColor(getResources().getColor(R.color.colorBlack));
                         textViewMap.get("location_tab").setTextColor(getResources().getColor(R.color.colorBlack));
-                        textViewMap.get("toast_tab").setTextColor(getResources().getColor(R.color.colorBlack));
+                        textViewMap.get("toast_tab").setTextColor(getResources().getColor(R.color.colorMain));
                         textViewMap.get("personal_tab").setTextColor(getResources().getColor(R.color.colorBlack));
                         break;
                     case "personal_tab":
@@ -126,10 +126,10 @@ public class ParentMainActivity extends AppCompatActivity {
                         imageIconViewMap.get("toast_tab").setImageResource(R.drawable.toast);
                         imageIconViewMap.get("personal_tab").setImageResource(R.drawable.person1);
                         textViewMap.get("home_tab").setTextColor(getResources().getColor(R.color.colorBlack));
-                        textViewMap.get("circle_tab").setTextColor(getResources().getColor(R.color.colorMain));
+                        textViewMap.get("circle_tab").setTextColor(getResources().getColor(R.color.colorBlack));
                         textViewMap.get("location_tab").setTextColor(getResources().getColor(R.color.colorBlack));
                         textViewMap.get("toast_tab").setTextColor(getResources().getColor(R.color.colorBlack));
-                        textViewMap.get("personal_tab").setTextColor(getResources().getColor(R.color.colorBlack));
+                        textViewMap.get("personal_tab").setTextColor(getResources().getColor(R.color.colorMain));
                         break;
                 }
             }
