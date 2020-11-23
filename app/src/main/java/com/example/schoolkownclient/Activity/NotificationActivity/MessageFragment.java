@@ -20,6 +20,5 @@ public class MessageFragment extends Fragment {
                 false);
 
         return view;
-        555
     }
 }
