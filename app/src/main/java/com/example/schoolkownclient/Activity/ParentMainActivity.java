@@ -40,27 +40,27 @@ public class ParentMainActivity extends AppCompatActivity {
         fragmentTabHost.setup(this,getSupportFragmentManager(),android.R.id.tabcontent);
         //创建内容页面TabSpec对象
         TabHost.TabSpec tab1=fragmentTabHost.newTabSpec("home_tab").setIndicator(getTabSpecView("home_tab","首页",R.drawable.home));
-        //Class参数：类名.class,对象.getClass()，Class.forName()
+        //Class参数：类名.class1,对象.getClass()，Class.forName()
         fragmentTabHost.addTab(tab1,
                 HomeFragment.class,//FirstFragment类的class对象
                 null);//传递数据时使用，不需要传递数据直接传null
         TabHost.TabSpec tab2=fragmentTabHost.newTabSpec("circle_tab").setIndicator(getTabSpecView("circle_tab","圈子",R.drawable.circle));
-        //Class参数：类名.class,对象.getClass()，Class.forName()
+        //Class参数：类名.class1,对象.getClass()，Class.forName()
         fragmentTabHost.addTab(tab2,
                 CircleFragment.class,//FirstFragment类的class对象
                 null);//传递数据时使用，不需要传递数据直接传null
         TabHost.TabSpec tab3=fragmentTabHost.newTabSpec("location_tab").setIndicator(getTabSpecView("location_tab","定位",R.drawable.location));
-        //Class参数：类名.class,对象.getClass()，Class.forName()
+        //Class参数：类名.class1,对象.getClass()，Class.forName()
         fragmentTabHost.addTab(tab3,
                 LocationFragment.class,//FirstFragment类的class对象
                 null);//传递数据时使用，不需要传递数据直接传null
         TabHost.TabSpec tab4=fragmentTabHost.newTabSpec("toast_tab").setIndicator(getTabSpecView("toast_tab","通知",R.drawable.toast));
-        //Class参数：类名.class,对象.getClass()，Class.forName()
+        //Class参数：类名.class1,对象.getClass()，Class.forName()
         fragmentTabHost.addTab(tab4,
                 ToastFragment.class,//FirstFragment类的class对象
                 null);//传递数据时使用，不需要传递数据直接传null
         TabHost.TabSpec tab5=fragmentTabHost.newTabSpec("personal_tab").setIndicator(getTabSpecView("personal_tab","我的",R.drawable.person));
-        //Class参数：类名.class,对象.getClass()，Class.forName()
+        //Class参数：类名.class1,对象.getClass()，Class.forName()
         fragmentTabHost.addTab(tab5,
                 PersonalFragment.class,//FirstFragment类的class对象
                 null);//传递数据时使用，不需要传递数据直接传null
