@@ -106,7 +106,7 @@
         android:layout_below="@id/l3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundColor="#ffffff"
+        android:background="@color/colorWhite"
         android:orientation="vertical">
         <RelativeLayout
             android:layout_width="match_parent"
@@ -140,7 +140,7 @@
 
 
         <ListView
-            android:id="@+id/litview_article"
+            android:id="@+id/listview_article"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     </LinearLayout>
