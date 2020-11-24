@@ -1,2 +1,2 @@
-include ':app', ':wheelview', ':pickerview'
+include ':app'
 rootProject.name='SchoolKownClient'
