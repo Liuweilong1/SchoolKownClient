@@ -19,6 +19,8 @@ import android.widget.ImageView;
 
 import androidx.core.content.ContextCompat;
 
+import com.example.schoolkownclient.R;
+
 import java.util.List;
 
 
