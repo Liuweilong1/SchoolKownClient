@@ -26,7 +26,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.SimpleTimeZone;
 
-public class CustomCircleAdapter extends BaseAdapter implements View.OnClickListener {
+public class CustomCircleAdapter extends BaseAdapter{
     private Context context;
     private int res;
     private List<Circle> circles=new ArrayList<>();
@@ -72,13 +72,21 @@ public class CustomCircleAdapter extends BaseAdapter implements View.OnClickList
         TextView time=convertView.findViewById(R.id.circle_item_time);
         TextView article=convertView.findViewById(R.id.circle_item_article);
         GridView gridView=convertView.findViewById(R.id.circle_item_gridview);
-        TextView thumsNum=convertView.findViewById(R.id.circle_item_dianzannum);
+        final TextView thumsNum=convertView.findViewById(R.id.circle_item_dianzannum);
         dianzan=convertView.findViewById(R.id.circle_item_diannzan);
         comment=convertView.findViewById(R.id.circle_item_pinglun);
         zhuanfa=convertView.findViewById(R.id.circle_item_zhuanfa);
-        dianzan.setOnClickListener(this);
-        comment.setOnClickListener(this);
-        zhuanfa.setOnClickListener(this);
+        dianzan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dianzan.setActivated(false);
+                Log.e("点击了点赞按钮","1");
+                thumsNum.setTextColor(context.getResources().getColor(R.color.colorAccent));
+            }
+        });
+//        dianzan.setOnClickListener(this);
+//        comment.setOnClickListener(this);
+//        zhuanfa.setOnClickListener(this);
 //        if(!circles.get(position).getText().equals("")){
             article.setText(circles.get(position).getText());
 //        }
@@ -94,21 +102,21 @@ public class CustomCircleAdapter extends BaseAdapter implements View.OnClickList
         return convertView;
     }
 
-    @Override
-    public void onClick(View v) {
-        switch(v.getId()){
-            case R.id.circle_item_diannzan:
-//                dianzan.setBackgroundResoure(R.drawable.dianzan1);
-                Log.e("点击了点赞按钮","1");
-                break;
-            case R.id.circle_item_pinglun:
+//    @Override
+//    public void onClick(View v) {
+//        switch(v.getId()){
+//            case R.id.circle_item_diannzan:
+//                dianzan.setBackgroundResource(R.drawable.dianzan1);
+//                Log.e("点击了点赞按钮","1");
+//                break;
+//            case R.id.circle_item_pinglun:
+//
+//                break;
+//            case R.id.circle_item_zhuanfa:
+//
+//                break;
+//        }
 
-                break;
-            case R.id.circle_item_zhuanfa:
-
-                break;
-        }
 
 
-    }
 }
