@@ -14,7 +14,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:padding="10dp">
+            android:padding="8dp">
             <ImageView
                 android:id="@+id/circle_item_head"
                 android:layout_width="32dp"
@@ -31,14 +31,14 @@
                     android:layout_height="wrap_content"
                     android:text="用户昵称"
                     android:textColor="#000000"
-                    android:textSize="20sp"/>
+                    android:textSize="17sp"/>
                 <TextView
                     android:id="@+id/circle_item_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="2020/02/03 12:05:06"
-                    android:layout_marginTop="8dp"
-                    android:textSize="17sp"/>
+                    android:layout_marginTop="2dp"
+                    android:textSize="14sp"/>
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
@@ -51,6 +51,7 @@
                 android:id="@+id/circle_item_article"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textColor="@color/colorMain"
                 android:text="圈子内容圈子内容圈子内容圈子内容圈子内容圈子内容圈子内容圈子内容圈子内容圈子内容圈子内容圈子内容圈子内容圈子内容圈子内容圈子内容"
                 android:paddingLeft="50dp"
                 android:paddingRight="15dp"/>
@@ -60,32 +61,36 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:numColumns="3"
-                android:layout_marginBottom="250dp"
                 android:layout_marginLeft="32dp"/>
         </LinearLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginLeft="50dp"
-            android:layout_marginBottom="100dp">
+            android:layout_below="@id/l2"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp">
             <LinearLayout
                 android:layout_alignParentLeft="true"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
+<!--                <com.example.schoolkownclient.LikeButton-->
+<!--                    android:id="@+id/cirlce_thumb_button"-->
+<!--                    android:layout_width="30dp"-->
+<!--                    android:layout_height="30dp"-->
+<!--                    app:circle_end_color="@android:color/holo_blue_dark"-->
+<!--                    app:circle_start_color="@android:color/holo_blue_bright"-->
+<!--                    app:dots_primary_color="@android:color/holo_blue_light"-->
+<!--                    app:dots_secondary_color="@android:color/holo_blue_dark"-->
+<!--                    app:icon_size="18dp"-->
+<!--                    app:like_drawable="@drawable/thumb_off"-->
+<!--                    app:unlike_drawable="@drawable/thumb_on" />-->
                 <com.example.schoolkownclient.LikeButton
                     android:id="@+id/cirlce_thumb_button"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    app:circle_end_color="@android:color/holo_blue_dark"
-                    app:circle_start_color="@android:color/holo_blue_bright"
-                    app:dots_primary_color="@android:color/holo_blue_light"
-                    app:dots_secondary_color="@android:color/holo_blue_dark"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     app:icon_size="18dp"
-                    app:like_drawable="@drawable/thumb_off"
-                    app:unlike_drawable="@drawable/thumb_on" />
-
+                    app:icon_type="heart" />
                 <TextView
                     android:id="@+id/circle_item_dianzannum"
                     android:layout_width="wrap_content"
@@ -103,9 +108,8 @@
                 android:orientation="horizontal">
                 <Button
                     android:id="@+id/circle_item_pinglun"
-                    android:layout_width="30dp"
-
-                    android:layout_height="30dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:background="@drawable/pinglun"/>
                 <TextView
                     android:layout_width="wrap_content"
@@ -123,12 +127,12 @@
                 android:orientation="horizontal">
                 <Button
                     android:id="@+id/circle_item_zhuanfa"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
                     android:background="@drawable/zhuanfa"/>
                 <TextView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignRight="@id/circle_item_zhuanfa"
                     android:layout_gravity="center_vertical"
                     android:layout_marginRight="5dp"
