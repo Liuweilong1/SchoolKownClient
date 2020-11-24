@@ -98,7 +98,7 @@ public class CustomCircleAdapter extends BaseAdapter implements View.OnClickList
     public void onClick(View v) {
         switch(v.getId()){
             case R.id.circle_item_diannzan:
-                dianzan.setBackgroundResource(R.drawable.dianzan1);
+//                dianzan.setBackgroundResoure(R.drawable.dianzan1);
                 Log.e("点击了点赞按钮","1");
                 break;
             case R.id.circle_item_pinglun:
