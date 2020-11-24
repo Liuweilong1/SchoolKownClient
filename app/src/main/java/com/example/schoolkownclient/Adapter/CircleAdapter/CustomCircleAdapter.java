@@ -1,12 +1,15 @@
 package com.example.schoolkownclient.Adapter.CircleAdapter;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.SimpleAdapter;
@@ -23,10 +26,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.SimpleTimeZone;
 
-public class CustomCircleAdapter extends BaseAdapter {
+public class CustomCircleAdapter extends BaseAdapter implements View.OnClickListener {
     private Context context;
     private int res;
     private List<Circle> circles=new ArrayList<>();
+    private Button dianzan;
+    private Button comment;
+    private Button zhuanfa;
 
     public CustomCircleAdapter(Context context, int res, List<Circle> cirlces) {
         this.context = context;
@@ -67,6 +73,12 @@ public class CustomCircleAdapter extends BaseAdapter {
         TextView article=convertView.findViewById(R.id.circle_item_article);
         GridView gridView=convertView.findViewById(R.id.circle_item_gridview);
         TextView thumsNum=convertView.findViewById(R.id.circle_item_dianzannum);
+        dianzan=convertView.findViewById(R.id.circle_item_diannzan);
+        comment=convertView.findViewById(R.id.circle_item_pinglun);
+        zhuanfa=convertView.findViewById(R.id.circle_item_zhuanfa);
+        dianzan.setOnClickListener(this);
+        comment.setOnClickListener(this);
+        zhuanfa.setOnClickListener(this);
 //        if(!circles.get(position).getText().equals("")){
             article.setText(circles.get(position).getText());
 //        }
@@ -79,8 +91,24 @@ public class CustomCircleAdapter extends BaseAdapter {
         time.setText(circles.get(position).getTime());
         thumsNum.setText(circles.get(position).getThumsupNum()+"");
 
-
         return convertView;
     }
 
+    @Override
+    public void onClick(View v) {
+        switch(v.getId()){
+            case R.id.circle_item_diannzan:
+                dianzan.setBackgroundResource(R.drawable.dianzan1);
+                Log.e("点击了点赞按钮","1");
+                break;
+            case R.id.circle_item_pinglun:
+
+                break;
+            case R.id.circle_item_zhuanfa:
+
+                break;
+        }
+
+
+    }
 }

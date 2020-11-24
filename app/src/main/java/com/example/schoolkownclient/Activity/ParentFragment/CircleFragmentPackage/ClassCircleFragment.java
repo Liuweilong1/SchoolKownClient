@@ -52,9 +52,9 @@ public class ClassCircleFragment extends Fragment {
         circle2.setHeadBitMap(BitmapFactory.decodeResource(getResources(),R.drawable.head));
         circle2.setName("小明");
         List<Bitmap> bitmaps=new ArrayList<>();
-        bitmaps.add(BitmapFactory.decodeResource(getResources(),R.drawable.logo));
-        bitmaps.add(BitmapFactory.decodeResource(getResources(),R.drawable.ability3));
-        bitmaps.add(BitmapFactory.decodeResource(getResources(),R.drawable.ability1));
+        bitmaps.add(BitmapFactory.decodeResource(getResources(),R.drawable.huanlesong));
+        bitmaps.add(BitmapFactory.decodeResource(getResources(),R.drawable.meidaodao));
+        bitmaps.add(BitmapFactory.decodeResource(getResources(),R.drawable.mochabaojiangdangao));
         circle2.setTime("2019/11/24 12:01");
         circle2.setBitmaps(bitmaps);
         circle2.setThumsupNum(11);
@@ -65,9 +65,9 @@ public class ClassCircleFragment extends Fragment {
         circle3.setTime("2028/11/24 09:01");
         circle3.setText("今天心情非常好");
         List<Bitmap> bitmaps1=new ArrayList<>();
-        bitmaps1.add(BitmapFactory.decodeResource(getResources(),R.drawable.article1));
-        bitmaps1.add(BitmapFactory.decodeResource(getResources(),R.drawable.article2));
-        bitmaps1.add(BitmapFactory.decodeResource(getResources(),R.drawable.article3));
+        bitmaps1.add(BitmapFactory.decodeResource(getResources(),R.drawable.motianlun));
+        bitmaps1.add(BitmapFactory.decodeResource(getResources(),R.drawable.sichongzou));
+        bitmaps1.add(BitmapFactory.decodeResource(getResources(),R.drawable.xiaoxiong));
         circle3.setThumsupNum(33);
         circle3.setBitmaps(bitmaps1);
         circles.add(circle3);

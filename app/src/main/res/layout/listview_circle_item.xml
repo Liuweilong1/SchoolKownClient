@@ -58,7 +58,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:numColumns="3"
-                android:paddingLeft="32dp"/>
+                android:layout_marginLeft="32dp"/>
         </LinearLayout>
         <RelativeLayout
             android:layout_marginTop="15dp"
@@ -73,11 +73,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-                <ImageView
+                <Button
                     android:id="@+id/circle_item_diannzan"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/dianzan"/>
+                    android:background="@drawable/dianzan"/>
                 <TextView
                     android:id="@+id/circle_item_dianzannum"
                     android:layout_width="wrap_content"
@@ -93,12 +93,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-                <ImageView
+                <Button
                     android:id="@+id/circle_item_pinglun"
                     android:layout_width="30dp"
 
                     android:layout_height="30dp"
-                    android:src="@drawable/pinglun"/>
+                    android:background="@drawable/pinglun"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -113,11 +113,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-                <ImageView
+                <Button
                     android:id="@+id/circle_item_zhuanfa"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/zhuanfa"/>
+                    android:background="@drawable/zhuanfa"/>
                 <TextView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
