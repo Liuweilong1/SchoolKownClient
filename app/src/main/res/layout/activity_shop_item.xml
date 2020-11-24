@@ -165,6 +165,8 @@
         </RelativeLayout>
     </RelativeLayout>
     <Button
+        android:id="@+id/duihuan"
+        android:onClick="onclicked"
         android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
