@@ -34,8 +34,8 @@ public class ClassCircleFragment extends Fragment {
             //获取控件
             listView=view.findViewById(R.id.listview_circleclass);
             initCircles();
-//            CustomCircleAdapter customCircleAdapter=new CustomCircleAdapter(getContext(),R.layout.listview_circle_item,circles);
-//            listView.setAdapter(customCircleAdapter);
+            CustomCircleAdapter customCircleAdapter=new CustomCircleAdapter(getContext(),R.layout.listview_circle_item,circles);
+            listView.setAdapter(customCircleAdapter);
 
         }
         return view;

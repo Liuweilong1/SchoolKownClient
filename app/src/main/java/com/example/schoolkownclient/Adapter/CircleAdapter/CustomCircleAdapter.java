@@ -1,36 +1,30 @@
 package com.example.schoolkownclient.Adapter.CircleAdapter;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.SimpleAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.schoolkownclient.Entities.Circle;
+import com.example.schoolkownclient.LikeButton;
+import com.example.schoolkownclient.OnLikeListener;
 import com.example.schoolkownclient.R;
 
-import org.w3c.dom.Text;
-
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-import java.util.SimpleTimeZone;
 
-public class CustomCircleAdapter extends BaseAdapter{
+public class CustomCircleAdapter extends BaseAdapter implements OnLikeListener {
     private Context context;
     private int res;
     private List<Circle> circles=new ArrayList<>();
-    private Button dianzan;
+    private LikeButton dianzan;
     private Button comment;
     private Button zhuanfa;
 
@@ -72,18 +66,18 @@ public class CustomCircleAdapter extends BaseAdapter{
         TextView time=convertView.findViewById(R.id.circle_item_time);
         TextView article=convertView.findViewById(R.id.circle_item_article);
         GridView gridView=convertView.findViewById(R.id.circle_item_gridview);
-        final TextView thumsNum=convertView.findViewById(R.id.circle_item_dianzannum);
-        dianzan=convertView.findViewById(R.id.circle_item_diannzan);
+//        final TextView thumsNum=convertView.findViewById(R.id.circle_item_dianzannum);
+        dianzan=convertView.findViewById(R.id.cirlce_thumb_button);
         comment=convertView.findViewById(R.id.circle_item_pinglun);
         zhuanfa=convertView.findViewById(R.id.circle_item_zhuanfa);
         dianzan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dianzan.setActivated(false);
                 Log.e("点击了点赞按钮","1");
-                thumsNum.setTextColor(context.getResources().getColor(R.color.colorAccent));
+//                thumsNum.setTextColor(context.getResources().getColor(R.color.colorAccent));
             }
         });
+        dianzan.setLiked(true);
 //        dianzan.setOnClickListener(this);
 //        comment.setOnClickListener(this);
 //        zhuanfa.setOnClickListener(this);
@@ -97,26 +91,19 @@ public class CustomCircleAdapter extends BaseAdapter{
         head.setImageBitmap(circles.get(position).getHeadBitMap());
         name.setText(circles.get(position).getName());
         time.setText(circles.get(position).getTime());
-        thumsNum.setText(circles.get(position).getThumsupNum()+"");
+//        thumsNum.setText(circles.get(position).getThumsupNum()+"");
 
         return convertView;
     }
 
-//    @Override
-//    public void onClick(View v) {
-//        switch(v.getId()){
-//            case R.id.circle_item_diannzan:
-//                dianzan.setBackgroundResource(R.drawable.dianzan1);
-//                Log.e("点击了点赞按钮","1");
-//                break;
-//            case R.id.circle_item_pinglun:
-//
-//                break;
-//            case R.id.circle_item_zhuanfa:
-//
-//                break;
-//        }
+    @Override
+    public void liked(LikeButton likeButton) {
+        Toast.makeText(context, "Liked!", Toast.LENGTH_SHORT).show();
+    }
 
-
+    @Override
+    public void unLiked(LikeButton likeButton) {
+        Toast.makeText(context, "Disliked!", Toast.LENGTH_SHORT).show();
+    }
 
 }

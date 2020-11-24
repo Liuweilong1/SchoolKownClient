@@ -1,4 +1,4 @@
-package com.example.schoolkownclient.likeButton;
+package com.example.schoolkownclient;
 
 /**
  * Created by Joel on 23/12/2015.

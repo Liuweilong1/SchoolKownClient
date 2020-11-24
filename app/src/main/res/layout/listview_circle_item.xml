@@ -74,8 +74,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
-                <net.onest.exersize.LikeButton
-                    android:id="@+id/thumb_button"
+                <com.example.schoolkownclient.LikeButton
+                    android:id="@+id/cirlce_thumb_button"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     app:circle_end_color="@android:color/holo_blue_dark"
@@ -83,14 +83,14 @@
                     app:dots_primary_color="@android:color/holo_blue_light"
                     app:dots_secondary_color="@android:color/holo_blue_dark"
                     app:icon_size="18dp"
-                    app:like_drawable="@drawable/thumb_on"
-                    app:unlike_drawable="@drawable/thumb_off" />
+                    app:like_drawable="@drawable/thumb_off"
+                    app:unlike_drawable="@drawable/thumb_on" />
 
                 <TextView
                     android:id="@+id/circle_item_dianzannum"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignRight="@id/circle_item_diannzan"
+                    android:layout_alignRight="@id/cirlce_thumb_button"
                     android:layout_gravity="center_vertical"
                     android:textSize="20sp"
                     android:text="99+"/>
