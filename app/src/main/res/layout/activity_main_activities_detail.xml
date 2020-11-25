@@ -40,19 +40,22 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp">
 
                 <ImageView
                     android:id="@+id/iv_time"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_alignParentLeft="true"
-                    android:layout_centerVertical="true" />
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/time"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
                     android:layout_toRightOf="@+id/iv_time"
                     android:text="时间"
                     android:textSize="21sp" />
@@ -69,19 +72,22 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp">
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp">
 
                 <ImageView
                     android:id="@+id/iv_address"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
                     android:layout_alignParentLeft="true"
-                    android:layout_centerVertical="true" />
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/address"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
+                    android:layout_marginLeft="7dp"
                     android:layout_toRightOf="@+id/iv_address"
                     android:text="位置"
                     android:textSize="21sp" />
@@ -116,6 +122,6 @@
             android:background="@drawable/btn_circle_shape"
             android:text="攒人气"
             android:textColor="#ffffff"
-            android:textSize="30sp" />
+            android:textSize="30sp"/>
     </LinearLayout>
 </LinearLayout>
