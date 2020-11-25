@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorTwoLight">
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/fragment_line_dark"
+            android:orientation="horizontal" >
+            <LinearLayout
+                android:id="@+id/lin_class"
+                android:layout_width="3dp"
+                android:background="@drawable/fragment_line_dark"
+                android:orientation="horizontal"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+                <TextView
+                    android:id="@+id/tv_class"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="班级圈"
+                    android:textStyle="bold"
+                    android:textColor="#008000" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lin_parent"
+                android:layout_width="3dp"
+                android:background="@drawable/fragment_line_dark"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+                <TextView
+                    android:id="@+id/tv_parent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="家长圈" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/publish"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/id_content"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></FrameLayout>
+
+</LinearLayout>

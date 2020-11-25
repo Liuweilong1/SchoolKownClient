@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 import com.example.schoolkownclient.R;
 
 public class NotificationFragment extends Fragment {
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
