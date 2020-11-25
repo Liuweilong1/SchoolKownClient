@@ -11,6 +11,7 @@
         android:textStyle="bold"
         android:layout_marginLeft="20dp"/>
     <ListView
+        android:id="@+id/mymeslist"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 </LinearLayout>
