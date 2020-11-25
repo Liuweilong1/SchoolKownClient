@@ -1,4 +1,4 @@
-package com.example.schoolkownclient.likeButton;
+package com.example.schoolkownclient;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -6,8 +6,6 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
-
-import com.example.schoolkownclient.R;
 
 import java.util.ArrayList;
 import java.util.List;

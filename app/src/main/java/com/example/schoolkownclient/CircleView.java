@@ -1,4 +1,4 @@
-package com.example.schoolkownclient.likeButton;
+package com.example.schoolkownclient;
 
 import android.animation.ArgbEvaluator;
 import android.content.Context;

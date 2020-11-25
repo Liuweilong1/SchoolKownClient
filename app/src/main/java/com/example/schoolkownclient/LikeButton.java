@@ -1,4 +1,4 @@
-package com.example.schoolkownclient.likeButton;
+package com.example.schoolkownclient;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -18,8 +18,6 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import androidx.core.content.ContextCompat;
-
-import com.example.schoolkownclient.R;
 
 import java.util.List;
 
@@ -321,7 +319,7 @@ public class LikeButton extends FrameLayout implements View.OnClickListener {
 
     public void setIconSizeDp(int iconSize)
     {
-        setIconSizePx((int)Utils.dipToPixels(getContext(),(float)iconSize));
+        setIconSizePx((int) Utils.dipToPixels(getContext(),(float)iconSize));
     }
     /**
      * Sets the size of the drawable/icon that's being used. The views that generate
