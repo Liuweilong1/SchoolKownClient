@@ -16,9 +16,7 @@ public class MineActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.activity_mine);
-
 
         //个人信息跳转
         LinearLayout personinformation = findViewById(R.id.mine_personinformation);
