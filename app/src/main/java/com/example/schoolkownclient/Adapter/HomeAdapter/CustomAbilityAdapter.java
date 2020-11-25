@@ -15,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CustomAbilityAdapter extends BaseAdapter {
+
     private Context context;
     private int res;
     private List<Ability> abilities=new ArrayList<>();
