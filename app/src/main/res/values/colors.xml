@@ -4,7 +4,12 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorMain">#6f79ff</color>
+    <color name="colorMainLight">#9ba3f2</color>
     <color name="colorBlack">#000000</color>
     <color name="colorBackgroud">#f9f9f9</color>
     <color name="colorWhite">#ffffff</color>
+    <color name="colorGrey">#bfbfbf</color>
+    <color name="colorMainDark">#4b57fc</color>
+    <color name="colorTwoLight">#564d84</color>
+    <color name="colorTwoDark">#291e6c</color>
 </resources>
