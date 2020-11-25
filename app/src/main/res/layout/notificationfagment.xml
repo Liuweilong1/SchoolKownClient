@@ -11,6 +11,7 @@
         android:textStyle="bold"
         android:text="全部通知"/>
     <ListView
+        android:id="@+id/mynolist"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
