@@ -76,4 +76,5 @@
             android:hint="请输入手机号"
             android:textSize="30dp"/>
     </RelativeLayout>
+
 </RelativeLayout>
