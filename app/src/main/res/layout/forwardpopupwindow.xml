@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:orientation="vertical"
-        android:background="@drawable/linearlayout_line"
+        android:background="@drawable/linearlayout_line_comment"
         android:layout_alignParentBottom="true"
         android:padding="10dp">
         <RelativeLayout
