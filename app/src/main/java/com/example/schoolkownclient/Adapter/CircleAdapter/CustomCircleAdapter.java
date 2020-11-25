@@ -82,6 +82,13 @@ public class CustomCircleAdapter extends BaseAdapter implements OnLikeListener {
 
             }
         });
+        comment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Log.e("点击了评论按钮","1111");
+                EventBus.getDefault().post("comment");
+            }
+        });
 //        dianzan.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
