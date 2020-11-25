@@ -17,5 +17,6 @@ public class MylikesActivity extends AppCompatActivity {
         setContentView(R.layout.activity_mylikes);
 
         likes = findViewById(R.id.mylikeslist);
+
     }
 }
