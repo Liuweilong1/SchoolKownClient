@@ -9,6 +9,8 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -16,6 +18,8 @@ import com.example.schoolkownclient.Entities.Circle;
 import com.example.schoolkownclient.LikeButton;
 import com.example.schoolkownclient.OnLikeListener;
 import com.example.schoolkownclient.R;
+
+import org.greenrobot.eventbus.EventBus;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,14 +74,23 @@ public class CustomCircleAdapter extends BaseAdapter implements OnLikeListener {
         dianzan=convertView.findViewById(R.id.cirlce_thumb_button);
         comment=convertView.findViewById(R.id.circle_item_pinglun);
         zhuanfa=convertView.findViewById(R.id.circle_item_zhuanfa);
-        dianzan.setOnClickListener(new View.OnClickListener() {
+        zhuanfa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Log.e("点击了点赞按钮","1");
-//                thumsNum.setTextColor(context.getResources().getColor(R.color.colorAccent));
+                Log.e("点击了转发按钮","1111");
+                EventBus.getDefault().post("forward");
+
             }
         });
-        dianzan.setLiked(true);
+//        dianzan.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Log.e("点击了点赞按钮","1");
+////                thumsNum.setTextColor(context.getResources().getColor(R.color.colorAccent));
+//            }
+//        });
+        dianzan.setOnLikeListener(this);
+        dianzan.setLiked(false);
 //        dianzan.setOnClickListener(this);
 //        comment.setOnClickListener(this);
 //        zhuanfa.setOnClickListener(this);
@@ -98,12 +111,12 @@ public class CustomCircleAdapter extends BaseAdapter implements OnLikeListener {
 
     @Override
     public void liked(LikeButton likeButton) {
-        Toast.makeText(context, "Liked!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "已点赞!", Toast.LENGTH_SHORT).show();
     }
 
     @Override
     public void unLiked(LikeButton likeButton) {
-        Toast.makeText(context, "Disliked!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "已取消点赞!", Toast.LENGTH_SHORT).show();
     }
 
 }

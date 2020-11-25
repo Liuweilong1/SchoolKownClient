@@ -8,7 +8,10 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -19,6 +22,10 @@ import com.example.schoolkownclient.Adapter.CircleAdapter.CustomCircleAdapter;
 import com.example.schoolkownclient.Entities.Circle;
 import com.example.schoolkownclient.R;
 
+import org.greenrobot.eventbus.EventBus;
+import org.greenrobot.eventbus.Subscribe;
+import org.greenrobot.eventbus.ThreadMode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,6 +33,7 @@ public class ClassCircleFragment extends Fragment {
     private View view;
     private ListView listView;
     private List<Circle> circles=new ArrayList<>();
+    private LinearLayout root;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -33,6 +41,7 @@ public class ClassCircleFragment extends Fragment {
             view = inflater.inflate(R.layout.fragment_circle_class, container, false);
             //获取控件
             listView=view.findViewById(R.id.listview_circleclass);
+            root=view.findViewById(R.id.circle_root);
             initCircles();
             CustomCircleAdapter customCircleAdapter=new CustomCircleAdapter(getContext(),R.layout.listview_circle_item,circles);
             listView.setAdapter(customCircleAdapter);
@@ -72,4 +81,45 @@ public class ClassCircleFragment extends Fragment {
         circle3.setBitmaps(bitmaps1);
         circles.add(circle3);
     }
+    //处理事件的方法
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    public void updateUI(String msg){
+        //threadMode = ThreadMode.MAIN在主线程执行
+        if (msg.equals("forward")) {
+            showForwardPopupWindow();
+        }
+    }
+    @Override
+    public void onStart() {
+        super.onStart();
+        if(!EventBus.getDefault().isRegistered(this)){//加上判断
+            EventBus.getDefault().register(this);
+        }
+    }
+    private void showForwardPopupWindow(){
+        //设置它的视图
+        View view1=getLayoutInflater().inflate(R.layout.forwardpopupwindow,null);
+        ImageView close=view1.findViewById(R.id.pop_forward_close);
+
+        //创建PopupWindow对象
+        final PopupWindow popupWindow=new PopupWindow(view1, LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.MATCH_PARENT,true);
+        //设置弹出窗口的宽度
+//        popupWindow.setWidth(LinearLayout.LayoutParams.MATCH_PARENT);
+
+//        popupWindow.setFocusable(true);
+//        popupWindow.setOutsideTouchable(true);
+
+        //设置视图当中控件的属性和监听器
+        popupWindow.setContentView(view1);
+        //显示PopupWindow(必须指定显示的位置)
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                popupWindow.dismiss();
+            }
+        });
+        popupWindow.showAtLocation(root, Gravity.CENTER,0,0);
+//        popupWindow.showAsDropDown(btnPop);  //将试图显示在某个控件的下方
+    }
+
 }
