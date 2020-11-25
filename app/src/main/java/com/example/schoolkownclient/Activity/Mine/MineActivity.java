@@ -8,6 +8,7 @@ import android.widget.LinearLayout;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.schoolkownclient.Activity.Shop.ShopActivity;
 import com.example.schoolkownclient.R;
 
 public class MineActivity extends AppCompatActivity {
@@ -42,13 +43,13 @@ public class MineActivity extends AppCompatActivity {
             }
         });
         //点赞收藏跳转
-        LinearLayout setup = findViewById(R.id.mine_signup);
-        setup.setOnClickListener(new View.OnClickListener(){
+        LinearLayout collections = findViewById(R.id.mine_collections);
+        collections.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
 
                 Intent intent = new Intent();
-                intent.setClass(MineActivity.this,MineActivity_setup.class);
+                intent.setClass(MineActivity.this,MineActivity_collections.class);
                 startActivity(intent);
             }
         });
@@ -59,7 +60,7 @@ public class MineActivity extends AppCompatActivity {
             public void onClick(View view) {
 
                 Intent intent = new Intent();
-                intent.setClass(MineActivity.this,MineActivity_setup.class);
+                intent.setClass(MineActivity.this, ShopActivity.class);
                 startActivity(intent);
             }
         });
@@ -75,7 +76,27 @@ public class MineActivity extends AppCompatActivity {
             }
         });
         //设置跳转
+        LinearLayout setup = findViewById(R.id.mine_setup);
+        setup.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent();
+                intent.setClass(MineActivity.this,MineActivity_setup.class);
+                startActivity(intent);
+            }
+        });
         //关于我们跳转
+        LinearLayout aboutus = findViewById(R.id.mine_aboutus);
+        aboutus.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent();
+                intent.setClass(MineActivity.this,MineActivity_aboutus.class);
+                startActivity(intent);
+            }
+        });
 
     }
 
