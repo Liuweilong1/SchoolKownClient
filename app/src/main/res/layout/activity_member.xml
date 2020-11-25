@@ -24,15 +24,31 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="学生家长"
+        android:text="教师"
         android:textSize="18sp"
         android:layout_marginTop="30dp"
         android:paddingLeft="30dp"
         android:paddingBottom="5dp"
         android:background="@drawable/textview_border"/>
     <ListView
+        android:id="@+id/myclassteacher"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:divider="#000000"
+        android:dividerHeight="2dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="家长"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="30dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/textview_border"/>
+    <ListView
+        android:id="@+id/myclassparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:divider="#000000"
         android:dividerHeight="2dp"/>
 </LinearLayout>

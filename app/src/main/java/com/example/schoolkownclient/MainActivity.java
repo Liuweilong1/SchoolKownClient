@@ -29,12 +29,12 @@ public class MainActivity extends Activity implements OnLikeListener {
 
         thumbButton.setLiked(true);
 
-        usingCustomIcons();
+//        usingCustomIcons();
 	}
-	public void usingCustomIcons() {
-		smileButton.setUnlikeDrawableRes(R.drawable.heart_off);
-		smileButton.setLikeDrawableRes(R.drawable.heart_on);
-    }
+//	public void usingCustomIcons() {
+//		smileButton.setUnlikeDrawableRes(R.drawable.heart_off);
+//		smileButton.setLikeDrawableRes(R.drawable.heart_on);
+//    }
 	 @Override
 	    public void liked(LikeButton likeButton) {
 	        Toast.makeText(this, "Liked!", Toast.LENGTH_SHORT).show();
