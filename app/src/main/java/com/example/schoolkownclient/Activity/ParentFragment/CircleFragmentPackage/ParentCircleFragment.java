@@ -18,7 +18,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.example.schoolkownclient.Adapter.CircleAdapter.CustomCircleAdapter;
+import com.example.schoolkownclient.Adapter.CircleAdapter.CustomCommentAdapter;
 import com.example.schoolkownclient.Entities.Circle;
+import com.example.schoolkownclient.Entities.Comment;
 import com.example.schoolkownclient.R;
 
 import org.greenrobot.eventbus.EventBus;
@@ -31,6 +33,7 @@ import java.util.List;
 public class ParentCircleFragment extends Fragment {
     private View view;
     private ListView listView;
+    private List<Comment> comments=new ArrayList<>();
     private List<Circle> circles=new ArrayList<>();
     private LinearLayout root;
     @Nullable
@@ -53,6 +56,8 @@ public class ParentCircleFragment extends Fragment {
         //threadMode = ThreadMode.MAIN在主线程执行
         if (msg.equals("forward")) {
             showForwardPopupWindow();
+        }else if(msg.equals("comment")){
+            showCommentPopupWindow();
         }
     }
     @Override
@@ -118,6 +123,70 @@ public class ParentCircleFragment extends Fragment {
         });
         popupWindow.showAtLocation(root, Gravity.CENTER,0,0);
 //        popupWindow.showAsDropDown(btnPop);  //将试图显示在某个控件的下方
+    }
+    private void showCommentPopupWindow(){
+        //设置它的视图
+        View view2=getLayoutInflater().inflate(R.layout.commentpopupwindow,null);
+        //创建PopupWindow对象
+        final PopupWindow popupWindow=new PopupWindow(view2, LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.MATCH_PARENT,true);
+        //设置弹出窗口的宽度
+        popupWindow.setWidth(LinearLayout.LayoutParams.MATCH_PARENT);
+        //设置视图当中控件的属性和监听器
+        //获取控件
+        ListView listView=view2.findViewById(R.id.listview_comment);
+        ImageView close=view2.findViewById(R.id.close_comment);
+        close.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                popupWindow.dismiss();
+            }
+        });
+        initComments();
+        CustomCommentAdapter customCommentAdapter=new CustomCommentAdapter(getContext(),R.layout.listview_comment_item,comments);
+        listView.setAdapter(customCommentAdapter);
+        popupWindow.setContentView(view2);
+
+        popupWindow.setFocusable(true);
+// 该属性设置为true则你在点击屏幕的空白位置也会退出
+
+        popupWindow.setTouchable(true);
+
+        popupWindow.setOutsideTouchable(true);
+        //显示PopupWindow(必须指定显示的位置)
+        popupWindow.showAtLocation(root, Gravity.CENTER,0,0);
+//        popupWindow.showAsDropDown(btnPop);  //将试图显示在某个控件的下方
+    }
+    public void initComments(){
+        Comment comment1=new Comment();
+        comment1.setHeadBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.head));
+        comment1.setName("用户1");
+        comment1.setContext("这是评论1...");
+        comment1.setTime("2009/12/12 22:34");
+        comments.add(comment1);
+        Comment comment2=new Comment();
+        comment2.setHeadBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.head));
+        comment2.setName("用户2");
+        comment2.setContext("这是评论2...");
+        comment2.setTime("2020/11/25 13:34");
+        comments.add(comment2);
+        Comment comment3=new Comment();
+        comment3.setHeadBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.head));
+        comment3.setName("用户3");
+        comment3.setContext("这是评论3...");
+        comment3.setTime("2022/01/12 02:48");
+        comments.add(comment3);
+        Comment comment4=new Comment();
+        comment4.setHeadBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.head));
+        comment4.setName("用户4");
+        comment4.setContext("这是评论4...");
+        comment4.setTime("2022/01/12 02:48");
+        comments.add(comment4);
+        Comment comment5=new Comment();
+        comment5.setHeadBitmap(BitmapFactory.decodeResource(getResources(),R.drawable.head));
+        comment5.setName("用户5");
+        comment5.setContext("这是评论5...");
+        comment5.setTime("2022/01/12 02:48");
+        comments.add(comment5);
     }
 
 }
