@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:id="@+id/swipmenulayoutmessage">
     <LinearLayout
+        android:id="@+id/messageliear"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal">
@@ -42,5 +43,14 @@
             android:text="事件"
             android:gravity="center"/>
     </LinearLayout>
+    <Button
+        android:id="@+id/tv_mes_delete"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="#000000"
+        android:padding="5dp"
+        android:text="删除"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
 
-</LinearLayout>
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>
