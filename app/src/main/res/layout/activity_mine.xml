@@ -179,13 +179,15 @@
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
 
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
 
-            android:background="#090808"/>
+            android:background="@color/colorMain"/>
         <LinearLayout
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:orientation="horizontal"
-            android:layout_height="60dp">
+            android:layout_height="50dp"
+            android:background="@drawable/edit_circle_shape">
             <ImageView
                 android:src="@drawable/history"
                 android:layout_marginLeft="20dp"
@@ -207,16 +209,13 @@
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/rightarrow" />
         </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
 
-
-            android:background="#090808"/>
         <LinearLayout
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:orientation="horizontal"
-            android:layout_height="60dp">
+            android:layout_height="50dp"
+            android:background="@drawable/edit_circle_shape">
             <ImageView
                 android:src="@drawable/phone"
                 android:layout_marginLeft="20dp"
@@ -237,18 +236,15 @@
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/rightarrow" />
         </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
 
-
-            android:background="#090808"/>
 
         <LinearLayout
 
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:orientation="horizontal"
-            android:layout_height="60dp">
+            android:layout_height="50dp"
+            android:background="@drawable/edit_circle_shape">
 
             <ImageView
                 android:src="@drawable/setup"
@@ -270,16 +266,13 @@
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/rightarrow" />
         </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
 
-
-            android:background="#090808"/>
         <LinearLayout
+            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:orientation="horizontal"
-            android:layout_height="60dp">
+            android:layout_height="50dp"
+            android:background="@drawable/edit_circle_shape">
             <ImageView
                 android:src="@drawable/banben"
                 android:layout_marginLeft="20dp"
@@ -300,12 +293,7 @@
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/rightarrow" />
         </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.5dp"
 
-
-            android:background="#090808"/>
 
 
 
