@@ -31,6 +31,7 @@
         android:paddingBottom="5dp"
         android:background="@drawable/textview_border"/>
     <ListView
+        android:id="@+id/myclassteacher"
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:divider="#000000"
@@ -45,6 +46,7 @@
         android:paddingBottom="5dp"
         android:background="@drawable/textview_border"/>
     <ListView
+        android:id="@+id/myclassparent"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:divider="#000000"
