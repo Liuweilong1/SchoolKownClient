@@ -32,6 +32,7 @@
         android:layout_height="wrap_content">
         <ImageView
             android:id="@+id/h_back"
+            android:background="@drawable/mine_bg"
             android:layout_width="match_parent"
             android:layout_height="180dp" />
         <ImageView
@@ -85,10 +86,10 @@
         android:layout_height="90dp"
         android:orientation="vertical">
         <ImageView
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="12dp"
             android:src="@drawable/person_mine"/>
         <TextView
             android:layout_width="wrap_content"
