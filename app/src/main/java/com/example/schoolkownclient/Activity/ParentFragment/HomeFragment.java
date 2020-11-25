@@ -1,6 +1,7 @@
 package com.example.schoolkownclient.Activity.ParentFragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.SearchView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -17,6 +19,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 
+import com.example.schoolkownclient.Activity.MyClassActivity.MemberActivity;
 import com.example.schoolkownclient.Adapter.HomeAdapter.CustomAbilityAdapter;
 import com.example.schoolkownclient.Adapter.HomeAdapter.CustomArticleAdapter;
 import com.example.schoolkownclient.Entities.Ability;
@@ -24,6 +27,7 @@ import com.example.schoolkownclient.Entities.Article;
 import com.example.schoolkownclient.Entities.GlideImageLoader;
 import com.example.schoolkownclient.Entities.ListViewHeight;
 import com.example.schoolkownclient.Entities.MyGridView;
+import com.example.schoolkownclient.Entities.Teacher;
 import com.example.schoolkownclient.R;
 import com.youth.banner.Banner;
 
@@ -41,14 +45,16 @@ public class HomeFragment extends Fragment {
     private MyGridView abilityGridView;
     private ListView articleListView;
     private List<Ability> abilities=new ArrayList<>();
+    private TextView myclass;
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull final LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         if (view == null) {
             view = inflater.inflate(R.layout.fragment_home, container, false);
             //获取控件
             mSearchView = (SearchView) view.findViewById(R.id.searchView);
             abilityGridView=view.findViewById(R.id.gridview_ability);
+            myclass = view.findViewById(R.id.myclass);
             banner=view.findViewById(R.id.home_banner);
             initArticle();
             articleListView=view.findViewById(R.id.listview_article);
@@ -85,7 +91,17 @@ public class HomeFragment extends Fragment {
         banner.setImages(images);
         //banner设置方法全部调用完毕时最后调用
         banner.start();
+
+        //myclass点击事件
+        myclass.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), MemberActivity.class);
+                startActivity(intent);
+            }
+        });
         return view;
+
     }
     public void initArticle(){
         Article article1=new Article();
