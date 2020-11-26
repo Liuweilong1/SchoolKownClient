@@ -23,10 +23,7 @@ public class MineActivity_signup extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-
-                Intent intent = new Intent();
-                intent.setClass(MineActivity_signup.this, MineActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

@@ -25,9 +25,7 @@ public class MineActivity_aboutus extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent();
-                intent.setClass(MineActivity_aboutus.this, MineActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
     }
