@@ -186,6 +186,7 @@
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_height="50dp"
+            android:background="@drawable/ripple_bg"
 
             >
             <ImageView
@@ -219,6 +220,7 @@
             android:orientation="horizontal"
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
+            android:background="@drawable/ripple_bg"
 >
 
             <ImageView
@@ -248,7 +250,8 @@
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_height="50dp"
-            android:layout_marginTop="10dp">
+            android:layout_marginTop="10dp"
+            android:background="@drawable/ripple_bg">
             <ImageView
                 android:src="@drawable/banben"
                 android:layout_marginLeft="20dp"
