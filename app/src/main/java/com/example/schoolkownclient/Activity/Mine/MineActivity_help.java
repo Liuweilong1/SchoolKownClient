@@ -8,8 +8,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.schoolkownclient.R;
 
 public class MineActivity_help extends AppCompatActivity {
-
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
