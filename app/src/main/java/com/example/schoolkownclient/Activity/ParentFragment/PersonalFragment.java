@@ -19,6 +19,7 @@ public class PersonalFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         if (view == null) {
             view = inflater.inflate(R.layout.activity_mine, container, false);
+
         }
         return view;
     }
