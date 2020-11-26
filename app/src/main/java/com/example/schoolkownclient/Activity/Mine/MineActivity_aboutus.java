@@ -12,6 +12,8 @@ import com.example.schoolkownclient.Activity.ParentFragment.HomeFragment;
 import com.example.schoolkownclient.R;
 
 public class MineActivity_aboutus extends AppCompatActivity {
+
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,9 +25,7 @@ public class MineActivity_aboutus extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent();
-                intent.setClass(MineActivity_aboutus.this, MineActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

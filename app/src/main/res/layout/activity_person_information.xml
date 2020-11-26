@@ -10,8 +10,6 @@
         android:background="#ffffff">
         <Button
             android:id="@+id/btn_back"
-=======
->>>>>>> github/master
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@drawable/back"
