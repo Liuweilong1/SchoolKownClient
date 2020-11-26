@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorMainLight"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     >
     <LinearLayout
@@ -61,9 +62,13 @@
 
 
     </LinearLayout>
-
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="600dp"
+    android:orientation="vertical"
+    android:background="@drawable/edit_circle_shap_mine">
     <LinearLayout
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -157,6 +162,7 @@
                 android:gravity="center_vertical"/>
         </LinearLayout>
     </LinearLayout>
+
     <!--子项-->
     <LinearLayout
         android:id="@+id/ll"
@@ -169,9 +175,9 @@
             android:layout_width="match_parent"
             android:layout_height="0.7dp"
 
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="30dp"
 
-            android:background="@color/colorMain"/>
+            android:background="@color/colorMainLight"/>
 
 
 
@@ -207,7 +213,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.7dp"
-            android:background="@color/colorMain"/>
+            android:background="@color/colorMainLight"/>
 
         <LinearLayout
 
@@ -241,7 +247,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.7dp"
-            android:background="@color/colorMain"/>
+            android:background="@color/colorMainLight"/>
         <LinearLayout
             android:id="@+id/mine_aboutus"
             android:layout_width="match_parent"
@@ -270,13 +276,13 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="0.7dp"
-            android:background="@color/colorMain"/>
-
-
-
-
+            android:background="@color/colorMainLight"/>
 
     </LinearLayout>
+</LinearLayout>
+
+
+
 
 
 
