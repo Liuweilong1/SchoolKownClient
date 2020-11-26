@@ -3,21 +3,34 @@ package com.example.schoolkownclient.Activity.Mine;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.schoolkownclient.Activity.ParentFragment.HomeFragment;
 import com.example.schoolkownclient.Activity.Shop.ShopActivity;
 import com.example.schoolkownclient.R;
 
 public class MineActivity extends AppCompatActivity {
-    private LinearLayout linearLayout;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mine);
 
+        //返回跳转
+        ImageView back = findViewById(R.id.mine_back);
+        back.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent();
+                intent.setClass(MineActivity.this, HomeFragment.class);
+                startActivity(intent);
+            }
+        });
         //个人信息跳转
         LinearLayout personinformation = findViewById(R.id.mine_personinformation);
         personinformation.setOnClickListener(new View.OnClickListener(){
