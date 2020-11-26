@@ -45,10 +45,7 @@ public class MineActivity_collections extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-
-                Intent intent = new Intent();
-                intent.setClass(MineActivity_collections.this, MineActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
 
