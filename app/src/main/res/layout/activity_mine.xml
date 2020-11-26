@@ -166,18 +166,12 @@
     <!--子项-->
     <LinearLayout
         android:id="@+id/ll"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:orientation="vertical"
-        android:layout_width="370dp"
+        android:layout_width="match_parent"
         android:layout_gravity="center"
         android:layout_height="wrap_content">
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.7dp"
 
-            android:layout_marginTop="30dp"
-
-            android:background="@color/colorMainLight"/>
 
 
 
@@ -210,10 +204,7 @@
         </LinearLayout>
 
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.7dp"
-            android:background="@color/colorMainLight"/>
+
 
         <LinearLayout
 
@@ -221,6 +212,7 @@
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_height="50dp"
+            android:layout_marginTop="10dp"
 >
 
             <ImageView
@@ -244,15 +236,13 @@
                 android:src="@drawable/rightarrow" />
         </LinearLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.7dp"
-            android:background="@color/colorMainLight"/>
+
         <LinearLayout
             android:id="@+id/mine_aboutus"
             android:layout_width="match_parent"
             android:orientation="horizontal"
-            android:layout_height="50dp">
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp">
             <ImageView
                 android:src="@drawable/banben"
                 android:layout_marginLeft="20dp"
@@ -273,10 +263,7 @@
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/rightarrow" />
         </LinearLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="0.7dp"
-            android:background="@color/colorMainLight"/>
+
 
     </LinearLayout>
 </LinearLayout>
