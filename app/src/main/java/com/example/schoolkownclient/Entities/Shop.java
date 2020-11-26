@@ -8,6 +8,7 @@ public class Shop {
     private String picture;
 
     public Shop() {
+
     }
 
     public Shop(int id, String name, String scoring, String introduction, String picture) {
