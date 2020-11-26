@@ -13,6 +13,7 @@ import androidx.fragment.app.FragmentTabHost;
 import com.example.schoolkownclient.Activity.ParentFragment.CircleFragment;
 import com.example.schoolkownclient.Activity.ParentFragment.HomeFragment;
 import com.example.schoolkownclient.Activity.ParentFragment.LocationFragment;
+import com.example.schoolkownclient.Activity.ParentFragment.PersonalFragment;
 import com.example.schoolkownclient.Activity.ParentFragment.ToastFragment;
 import com.example.schoolkownclient.R;
 
