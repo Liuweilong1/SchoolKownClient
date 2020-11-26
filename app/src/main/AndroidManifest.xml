@@ -38,6 +38,10 @@
         <activity android:name=".Activity.Mine.MineActivity_aboutus"/>
         <activity android:name=".Activity.Mine.MineActivity_help"/>
         <activity android:name=".Activity.Mine.MineActivity_setup"/>
+
+        <!--SchoolActivity-->
+        <activity android:name=".Activity.SchoolActivity.ListActivity"/>
+        <activity android:name=".Activity.SchoolActivity.ListDetailActivity"/>
     </application>
 
 </manifest>
