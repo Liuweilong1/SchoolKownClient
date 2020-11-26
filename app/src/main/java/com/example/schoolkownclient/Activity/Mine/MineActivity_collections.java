@@ -9,6 +9,7 @@ import com.example.schoolkownclient.R;
 
 public class MineActivity_collections extends AppCompatActivity {
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

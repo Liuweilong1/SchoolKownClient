@@ -12,6 +12,7 @@ import com.example.schoolkownclient.Activity.Shop.ShopActivity;
 import com.example.schoolkownclient.R;
 
 public class MineActivity extends AppCompatActivity {
+
     private LinearLayout linearLayout;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
