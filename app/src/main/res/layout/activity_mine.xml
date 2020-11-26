@@ -25,55 +25,46 @@
     </LinearLayout>
 
     <!--磨砂头像-->
-    <RelativeLayout
+    <LinearLayout
 
 
         android:id="@+id/relative"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <ImageView
-            android:id="@+id/h_back"
-            android:background="@drawable/mine_bg"
-            android:layout_width="match_parent"
-            android:layout_height="180dp" />
+        android:layout_height="140dp"
+        android:orientation="horizontal"
+        android:background="@color/colorMainLight">
+
         <ImageView
             android:id="@+id/h_head"
+            android:background="@drawable/logo"
             android:layout_width="80dp"
             android:layout_height="80dp"
-            android:layout_centerInParent="true" />
-        <RelativeLayout
-            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"/>
+        <LinearLayout
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@id/h_back"
-            android:layout_marginBottom="20dp"
-            android:orientation="horizontal">
-            <ImageView
-                android:id="@+id/user_line"
-                android:layout_width="1dp"
-                android:layout_height="25dp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginLeft="15dp"
-                android:background="@android:color/white" />
+            android:orientation="vertical">
             <TextView
-                android:id="@+id/user_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toLeftOf="@id/user_line"
-                android:text="张三"
-                android:textColor="@android:color/white"
-                android:textSize="17sp" />
+                android:text="校晓用户名"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp"/>
             <TextView
-                android:id="@+id/user_val"
+                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_toRightOf="@id/user_line"
-                android:text="182****5882"
-                android:textColor="@android:color/white"
-                android:textSize="17sp" />
-        </RelativeLayout>
+                android:text="校晓账号12345678"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp"/>
+        </LinearLayout>
 
-    </RelativeLayout>
+
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_marginTop="10dp"
@@ -84,7 +75,6 @@
         android:onClick="onClick">
         <LinearLayout
             android:id="@+id/mine_personinformation"
-            android:background="@drawable/logobg"
             android:layout_width="80dp"
             android:layout_height="90dp"
             android:orientation="vertical">
@@ -106,7 +96,6 @@
         </LinearLayout>
         <LinearLayout
             android:id="@+id/mine_signup"
-            android:background="@drawable/logobg"
             android:layout_width="80dp"
             android:layout_height="90dp"
             android:layout_marginLeft="10dp"
@@ -129,7 +118,6 @@
         </LinearLayout>
         <LinearLayout
             android:id="@+id/mine_collections"
-            android:background="@drawable/logobg"
             android:layout_width="80dp"
             android:layout_height="90dp"
             android:layout_marginLeft="10dp"
@@ -152,7 +140,6 @@
         </LinearLayout>
         <LinearLayout
             android:id="@+id/mine_shop"
-            android:background="@drawable/logobg"
             android:layout_width="80dp"
             android:layout_height="90dp"
             android:layout_marginLeft="10dp"
@@ -184,7 +171,7 @@
         android:layout_height="wrap_content">
         <View
             android:layout_width="match_parent"
-            android:layout_height="0.5dp"
+            android:layout_height="0.7dp"
 
             android:layout_marginTop="10dp"
 
@@ -197,7 +184,7 @@
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_height="50dp"
-            android:background="@drawable/edit_circle_shap_mine"
+
             >
             <ImageView
                 android:src="@drawable/phone"
@@ -221,15 +208,18 @@
         </LinearLayout>
 
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/colorMain"/>
 
         <LinearLayout
 
             android:id="@+id/mine_setup"
-            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_height="50dp"
-            android:background="@drawable/edit_circle_shap_mine">
+>
 
             <ImageView
                 android:src="@drawable/setup"
@@ -252,13 +242,15 @@
                 android:src="@drawable/rightarrow" />
         </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/colorMain"/>
         <LinearLayout
             android:id="@+id/mine_aboutus"
-            android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:orientation="horizontal"
-            android:layout_height="50dp"
-            android:background="@drawable/edit_circle_shap_mine">
+            android:layout_height="50dp">
             <ImageView
                 android:src="@drawable/banben"
                 android:layout_marginLeft="20dp"
@@ -279,6 +271,10 @@
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/rightarrow" />
         </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:background="@color/colorMain"/>
 
 
 
