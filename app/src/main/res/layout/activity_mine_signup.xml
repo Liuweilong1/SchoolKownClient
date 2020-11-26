@@ -11,6 +11,7 @@
         android:orientation="horizontal"
         android:background="#6f79ff">
         <ImageView
+            android:id="@+id/mine_back_signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/back2"/>
