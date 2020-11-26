@@ -23,6 +23,7 @@ public class MineActivity_help extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
+
                 finish();
             }
         });

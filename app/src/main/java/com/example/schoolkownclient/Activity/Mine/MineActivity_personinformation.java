@@ -23,7 +23,10 @@ public class MineActivity_personinformation extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                finish();
+
+                Intent intent = new Intent();
+                intent.setClass(MineActivity_personinformation.this, MineActivity.class);
+                startActivity(intent);
             }
         });
     }
