@@ -67,10 +67,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="家长圈"
-                android:layout_alignParentRight="true"
+                android:layout_toLeftOf="@id/enter_range"
                 android:textSize="18sp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="5dp"/>
+            <ImageView
+                android:id="@+id/enter_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/enter"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
@@ -95,10 +102,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="深圳市南山区"
-                android:layout_alignParentRight="true"
+                android:layout_toLeftOf="@id/enter_location"
                 android:textSize="18sp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="5dp"/>
+            <ImageView
+                android:id="@+id/enter_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/enter"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
@@ -123,10 +137,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="立即发送"
-                android:layout_alignParentRight="true"
+                android:layout_toLeftOf="@id/enter_time"
                 android:textSize="18sp"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="5dp"/>
+            <ImageView
+                android:id="@+id/enter_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/enter"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
         </RelativeLayout>
     </LinearLayout>
     <Button android:layout_width="350dp"
