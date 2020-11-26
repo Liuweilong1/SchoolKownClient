@@ -24,9 +24,7 @@ public class MineActivity_personinformation extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent();
-                intent.setClass(MineActivity_personinformation.this, MineActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
     }
