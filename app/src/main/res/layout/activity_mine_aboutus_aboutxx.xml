@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#6f79ff">
+        <ImageView
+            android:id="@+id/mine_back_aboutus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="关于校晓"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="350dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="match_parent"
+        android:text="智慧树幼教互动云平台以园长、老师、家长为主要服务对象，为幼儿园提供了一个科学高效的园务信息化管理平台，为老师和家长之间、班级圈之间提供一个交流、分享和记录孩子成长的互动平台。
+
+        通过一部手机管理一个校园，一端是幼儿园一端是家长，实现便捷无缝的沟通。促进老师和家长之间沟通互动，增强了家长与幼儿园彼此的信任，促使幼儿园和家长之间的和谐、透明、良性互动，形成全新的家园共育方式。它不仅仅是一款幼儿成长教育软件，更是一个能促使家长与幼儿园彼此信任、家长与孩子心灵贴近的沟通成长平台。
+
+        智慧树幼教互动云平台是基于移动互联网的和谐家园共育平台，它满足了家长对孩子的迫切关注的需求、幼儿园实现园务管理信息化的需求、家长幼儿园便捷无缝沟通的需求，也契合了移动互联网时代碎片化的信息消费潮流。
+
+        家长可通过家长端APP随时了解宝宝在幼儿园的精彩时刻；及时与老师、园长、班级圈互动；了解幼儿园最新通知和动态；记录孩子精彩的成长记录，为宝宝留下一笔宝贵的成长财富。照片、文字、声音、视频充分满足家长心理需求。
+
+        对于幼儿园而言，实现了园务的信息化管理，让原本繁重的信息发布传播工作变得轻松自在，提升园方品牌形象，扩大幼儿园在目标客户群体中的影响力，促使形成全新的家园共育方式。
+
+官网：www.hybbtree.com
+电话：4000 996 999"/>
+</LinearLayout>
