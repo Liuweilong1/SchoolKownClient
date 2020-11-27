@@ -19,6 +19,7 @@ import com.example.schoolkownclient.R;
 public class RoundImageView extends AppCompatImageView {
     private final RectF roundRect = new RectF();
     private float rect_adius = 100;
+
     private final Paint maskPaint = new Paint();
     private final Paint zonePaint = new Paint();
 
