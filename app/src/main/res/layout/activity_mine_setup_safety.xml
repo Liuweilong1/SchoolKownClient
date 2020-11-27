@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="设置"
+            android:text="账号与安全"
             android:textColor="#FFFFFF"
             android:textSize="25sp"/>
     </LinearLayout>
@@ -35,7 +35,34 @@
             android:background="@drawable/edit_circle_shape">
 
             <TextView
-                android:text="账号与安全"
+                android:text="绑定手机号"
+                android:textSize="20dp"
+                android:textColor="@color/colorMain"
+                android:layout_weight="1"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="123456783456"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/rightarrow" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="50dp"
+            android:background="@drawable/edit_circle_shape">
+
+            <TextView
+                android:text="修改密码"
                 android:textSize="20dp"
                 android:textColor="@color/colorMain"
                 android:layout_weight="1"
@@ -57,7 +84,7 @@
             android:background="@drawable/edit_circle_shape">
 
             <TextView
-                android:text="提醒设置"
+                android:text="注销账号"
                 android:textSize="20dp"
                 android:textColor="@color/colorMain"
                 android:layout_weight="1"
@@ -71,45 +98,5 @@
                 android:layout_gravity="center_vertical"
                 android:src="@drawable/rightarrow" />
         </LinearLayout>
-        <LinearLayout
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="50dp"
-            android:background="@drawable/edit_circle_shape">
-
-            <TextView
-                android:text="检查更新"
-                android:textSize="20dp"
-                android:textColor="@color/colorMain"
-                android:layout_weight="1"
-                android:layout_marginLeft="12dp"
-                android:gravity="center_vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent" />
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/rightarrow" />
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-        android:layout_marginTop="30dp"
-        android:layout_width="370dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-        <Button
-            android:id="@+id/login_btn_enter"
-            android:layout_width="370dp"
-            android:layout_height="wrap_content"
-            android:text="退出登录"
-            android:layout_below="@id/login_pwd"
-            android:background="@drawable/btn_circle_shape"
-            android:layout_centerHorizontal="true"
-            android:textColor="#ffffff"
-            android:textStyle="bold"
-            android:textSize="20sp"
-            android:layout_marginTop="20dp"/>
     </LinearLayout>
 </LinearLayout>
