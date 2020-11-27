@@ -32,17 +32,15 @@
         android:orientation="horizontal"
         android:background="@color/colorMainLight">
 
-        <net.onest.a111111.timeLine.RoundImageView
+        <com.example.schoolkownclient.Entities.RoundImageView
             android:id="@+id/mine_headimg"
+            app:rect_adius="45"
             android:src="@drawable/logo"
-            android:layout_centerInParent="true"
-            app:rect_adius="30"
             android:scaleType="centerCrop"
             android:layout_width="80dp"
             android:layout_height="80dp"
             android:layout_marginTop="30dp"
-            android:layout_marginLeft="30dp"
-            />
+            android:layout_marginLeft="30dp"/>
 
 
         <LinearLayout
