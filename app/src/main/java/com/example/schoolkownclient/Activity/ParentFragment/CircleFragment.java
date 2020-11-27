@@ -1,5 +1,6 @@
 package com.example.schoolkownclient.Activity.ParentFragment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.Display;
@@ -17,6 +18,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.schoolkownclient.Activity.ParentFragment.CircleFragmentPackage.ClassCircleFragment;
 import com.example.schoolkownclient.Activity.ParentFragment.CircleFragmentPackage.ParentCircleFragment;
+import com.example.schoolkownclient.Activity.SmallActivity.SendCircleActivity;
 import com.example.schoolkownclient.R;
 
 public class CircleFragment extends Fragment implements View.OnClickListener {
@@ -28,6 +30,7 @@ public class CircleFragment extends Fragment implements View.OnClickListener {
     private TextView txtClass;
     private TextView txtParent;
     private int mScreen1_2;
+    private ImageView publishCircle;
 
     @Nullable
     @Override
@@ -43,6 +46,7 @@ public class CircleFragment extends Fragment implements View.OnClickListener {
         lin_sub2 = (LinearLayout) view.findViewById(R.id.lin_parent);
         txtClass=view.findViewById(R.id.tv_class);
         txtParent=view.findViewById(R.id.tv_parent);
+        publishCircle=view.findViewById(R.id.circle_publish);
     }
 
     protected void initData() {
@@ -62,6 +66,7 @@ public class CircleFragment extends Fragment implements View.OnClickListener {
     protected void setLinstener() {
         lin_sub1.setOnClickListener(this);
         lin_sub2.setOnClickListener(this);
+        publishCircle.setOnClickListener(this);
     }
 
     @Override
@@ -81,6 +86,10 @@ public class CircleFragment extends Fragment implements View.OnClickListener {
                 lin_sub2.setBackground(getResources().getDrawable(R.drawable.fragment_line_light));
                 txtClass.setTextColor(getResources().getColor(R.color.colorWhite));
                 txtParent.setTextColor(getResources().getColor(R.color.colorTwoDark));
+                break;
+            case R.id.circle_publish:
+                Intent intent=new Intent(getContext(), SendCircleActivity.class);
+                startActivity(intent);
                 break;
             default:
                 break;
