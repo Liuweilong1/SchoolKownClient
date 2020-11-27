@@ -31,8 +31,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:src="@drawable/logo"
-            android:layout_marginLeft="150dp"
-            android:background="@drawable/edit_circle_shape"/>
+            android:layout_marginLeft="150dp" />
     </LinearLayout>
     <LinearLayout
         android:layout_marginTop="20dp"

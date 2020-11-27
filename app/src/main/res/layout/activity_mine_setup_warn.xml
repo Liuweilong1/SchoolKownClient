@@ -24,21 +24,29 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="80dp"
+        android:orientation="horizontal">
         <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="消息提示音"/>
+            android:text="消息提示音"
+            android:textSize="25dp"
+            android:textColor="@color/colorMain"/>
+        <Switch
+            android:layout_marginLeft="160dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="10dp"
+            android:textOn="   "
+            android:textOff="  "
+            android:thumb="@drawable/switch_thumb"
+            android:track="@drawable/swtich_track" />
     </LinearLayout>
 
-    <Switch
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:switchMinWidth="10dp"
-        android:textOn="   "
-        android:textOff="  "
-        android:thumb="@drawable/switch_thumb"
-        android:track="@drawable/swtich_track" />
+
 
 
 </LinearLayout>
