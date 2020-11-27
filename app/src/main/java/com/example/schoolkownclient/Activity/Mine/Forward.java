@@ -1,6 +1,5 @@
 package com.example.schoolkownclient.Activity.Mine;
 
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
@@ -20,7 +19,7 @@ import java.util.Calendar;
 /*
 预约时间表 安卓自带的时间表
  */
-public class MineActivity_signup extends AppCompatActivity {
+public class Forward extends AppCompatActivity {
     int mYear, mMonth, mDay;
     Button btn;
     Button btn_true;
@@ -65,7 +64,7 @@ public class MineActivity_signup extends AppCompatActivity {
 //                startActivity(intent2);
 //                break;
             case R.id.datetrue:
-                Toast toast=Toast.makeText(getApplicationContext(), "签到成功", Toast.LENGTH_SHORT);
+                Toast toast=Toast.makeText(getApplicationContext(), "预约成功", Toast.LENGTH_SHORT);
                 toast.show();
                 break;
         }
