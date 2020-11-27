@@ -10,13 +10,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.schoolkownclient.R;
 
-public class MineActivity_aboutus extends AppCompatActivity {
+public class MineActivity_aboutus_aboutxx extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mine_aboutus);
+        setContentView(R.layout.activity_mine_aboutus_aboutxx);
 
         //返回跳转
         ImageView back = findViewById(R.id.mine_back_aboutus);
