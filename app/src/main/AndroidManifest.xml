@@ -20,7 +20,7 @@
         <activity android:name=".Activity.LoginActivity.LoginActivity">
 
         </activity>
-        <activity android:name=".Activity.ParentMainActivity">
+        <activity android:name=".Activity.AdPage.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -31,6 +31,7 @@
 
 
         <!--Mine-->
+        <activity android:name=".Activity.ParentMainActivity"/>
         <activity android:name=".Activity.Mine.MineActivity_collections"/>
         <activity android:name=".Activity.Mine.MineActivity"/>
         <activity android:name=".Activity.Mine.MineActivity_signup"/>
@@ -44,6 +45,7 @@
         <!--SchoolActivity-->
         <activity android:name=".Activity.SchoolActivity.ListActivity"/>
         <activity android:name=".Activity.SchoolActivity.ListDetailActivity"/>
+        <activity android:name=".Activity.AdPage.LeadActivity"/>
     </application>
 
 </manifest>
