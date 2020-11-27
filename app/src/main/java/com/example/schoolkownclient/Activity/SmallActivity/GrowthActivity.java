@@ -1,5 +1,6 @@
 package com.example.schoolkownclient.Activity.SmallActivity;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
@@ -44,7 +45,8 @@ public class GrowthActivity extends AppCompatActivity {
         publish.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent intent=new Intent(GrowthActivity.this,SendCircleActivity.class);
+                startActivity(intent);
             }
         });
     }
