@@ -33,12 +33,12 @@
         android:background="@color/colorMainLight">
 
         <com.example.schoolkownclient.Entities.RoundImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:id="@+id/mine_headimg"
             app:rect_adius="45"
             android:src="@drawable/logo"
             android:scaleType="centerCrop"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="30dp"/>
 
