@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorTwoLight">
+        <ImageView
+            android:id="@+id/growth_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/publish"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    <TextView
+        android:id="@+id/time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:textSize="16dp" />
+
+    <RelativeLayout
+        android:id="@+id/R1"
+        android:layout_width="40dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/quan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/quan_item" />
+        <!--圈上边的线-->
+        <View
+            android:id="@+id/line_up"
+            android:layout_width="4dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/quan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="-2dp"
+            android:background="#000000" />
+
+        <!--圈下边的线-->
+        <View
+            android:id="@+id/line_dowm"
+            android:layout_width="4dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/quan"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-2dp"
+            android:background="#000000" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/msg_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="这是一条数据"
+            android:textSize="25dp"/>
+        <ListView
+            android:id="@+id/growth_listview"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

@@ -19,7 +19,9 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 
+import com.example.schoolkownclient.Activity.MainActivity;
 import com.example.schoolkownclient.Activity.MyClassActivity.MemberActivity;
+import com.example.schoolkownclient.Activity.SmallActivity.GrowthActivity;
 import com.example.schoolkownclient.Adapter.HomeAdapter.CustomAbilityAdapter;
 import com.example.schoolkownclient.Adapter.HomeAdapter.CustomArticleAdapter;
 import com.example.schoolkownclient.Entities.Ability;
@@ -43,6 +45,7 @@ public class HomeFragment extends Fragment {
     private List<Article> articles=new ArrayList<>();
     private Banner banner;
     private MyGridView abilityGridView;
+    private TextView growth;
     private ListView articleListView;
     private List<Ability> abilities=new ArrayList<>();
     private TextView myclass;
@@ -56,6 +59,7 @@ public class HomeFragment extends Fragment {
             abilityGridView=view.findViewById(R.id.gridview_ability);
             myclass = view.findViewById(R.id.myclass);
             banner=view.findViewById(R.id.home_banner);
+            growth=view.findViewById(R.id.home_growth);
             initArticle();
             articleListView=view.findViewById(R.id.listview_article);
             CustomArticleAdapter customArticleAdapter=new CustomArticleAdapter(getContext(),R.layout.listview_article_item,articles);
@@ -97,6 +101,13 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getContext(), MemberActivity.class);
+                startActivity(intent);
+            }
+        });
+        growth.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(), GrowthActivity.class);
                 startActivity(intent);
             }
         });
