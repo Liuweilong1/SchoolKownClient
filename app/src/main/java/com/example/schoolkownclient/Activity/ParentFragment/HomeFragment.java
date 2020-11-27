@@ -22,6 +22,7 @@ import androidx.fragment.app.Fragment;
 import com.example.schoolkownclient.Activity.MainActivity;
 import com.example.schoolkownclient.Activity.MyClassActivity.MemberActivity;
 import com.example.schoolkownclient.Activity.SmallActivity.GrowthActivity;
+import com.example.schoolkownclient.Activity.SmallActivity.RecipeActivity;
 import com.example.schoolkownclient.Adapter.HomeAdapter.CustomAbilityAdapter;
 import com.example.schoolkownclient.Adapter.HomeAdapter.CustomArticleAdapter;
 import com.example.schoolkownclient.Entities.Ability;
@@ -49,6 +50,7 @@ public class HomeFragment extends Fragment {
     private ListView articleListView;
     private List<Ability> abilities=new ArrayList<>();
     private TextView myclass;
+    private TextView recipe;
     @Nullable
     @Override
     public View onCreateView(@NonNull final LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -60,6 +62,7 @@ public class HomeFragment extends Fragment {
             myclass = view.findViewById(R.id.myclass);
             banner=view.findViewById(R.id.home_banner);
             growth=view.findViewById(R.id.home_growth);
+            recipe=view.findViewById(R.id.home_recipe);
             initArticle();
             articleListView=view.findViewById(R.id.listview_article);
             CustomArticleAdapter customArticleAdapter=new CustomArticleAdapter(getContext(),R.layout.listview_article_item,articles);
@@ -108,6 +111,13 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getContext(), GrowthActivity.class);
+                startActivity(intent);
+            }
+        });
+        recipe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(), RecipeActivity.class);
                 startActivity(intent);
             }
         });
