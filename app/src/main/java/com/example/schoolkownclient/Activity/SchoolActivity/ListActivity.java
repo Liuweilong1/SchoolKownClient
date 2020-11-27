@@ -47,7 +47,7 @@ public class ListActivity extends AppCompatActivity {
     public void initDate(){
         Activities activities = new Activities();
         activities.setTitle("暑假已到，跟同学们一起逛馆，你还等什么");
-        activities.setTime("举办时间：2020/7/01-2020/7/12");
+        activities.setTime("2020/7/01-2020/7/12");
         activities.setState("待参加");
         activities.setPhoto(R.drawable.saphoto);
         activities.setType(R.drawable.flag);

@@ -22,8 +22,10 @@
             android:textSize="25sp"/>
     </LinearLayout>
 
+
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
+        android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="20dp"
@@ -47,12 +49,10 @@
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="30dp"
                 android:src="@drawable/logo"/>
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/rightarrow" />
+
         </LinearLayout>
 
         <LinearLayout
@@ -63,7 +63,7 @@
             android:background="@drawable/edit_circle_shape">
 
             <TextView
-                android:text="昵称"
+                android:text="用户名"
                 android:textSize="20dp"
                 android:textColor="@color/colorMain"
                 android:layout_weight="1"
@@ -71,11 +71,13 @@
                 android:gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent" />
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/rightarrow" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="校晓昵称"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="30dp"/>
         </LinearLayout>
 
     </LinearLayout>
@@ -86,7 +88,8 @@
         android:background="@color/colorMainLight"/>
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="380dp"
+        android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="15dp"
@@ -107,11 +110,14 @@
                 android:gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent" />
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/rightarrow" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="30dp"
+                android:text="李校晓"
+                android:textSize="18dp" />
         </LinearLayout>
         <LinearLayout
             android:layout_marginTop="10dp"
@@ -129,35 +135,16 @@
                 android:gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent" />
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/rightarrow" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_height="50dp"
-            android:background="@drawable/edit_circle_shape">
-
             <TextView
-                android:text="身份证"
-                android:textSize="20dp"
-                android:textColor="@color/colorMain"
-                android:layout_weight="1"
-                android:layout_marginLeft="12dp"
-                android:gravity="center_vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent" />
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/rightarrow" />
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="30dp"/>
         </LinearLayout>
+
+
 
         <LinearLayout
             android:layout_marginTop="10dp"
@@ -175,11 +162,13 @@
                 android:gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent" />
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/rightarrow" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1234567890"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="30dp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -198,11 +187,31 @@
                 android:gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent" />
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/rightarrow" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1234567@xiaoxiao.com"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="30dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/login_btn_enter"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:text="修改个人信息"
+                android:layout_below="@id/login_pwd"
+                android:background="@drawable/btn_circle_shape"
+                android:layout_centerHorizontal="true"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"/>
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

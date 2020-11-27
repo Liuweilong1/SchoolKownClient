@@ -23,16 +23,18 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="400dp"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp">
-        <ImageView
-            android:layout_gravity="center"
+        <com.example.schoolkownclient.Entities.RoundImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/logo"
+            android:layout_gravity="center"
             android:layout_marginLeft="150dp"
-            android:background="@drawable/edit_circle_shape"/>
+            android:id="@+id/mine_headimg"
+            android:src="@drawable/logo"
+            android:scaleType="centerCrop"
+            />
     </LinearLayout>
     <LinearLayout
         android:layout_marginTop="20dp"

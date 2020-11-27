@@ -1,6 +1,6 @@
 package com.example.schoolkownclient.Activity.Mine;
 
-import android.content.Intent;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -8,7 +8,6 @@ import android.widget.ImageView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.schoolkownclient.Activity.ParentFragment.HomeFragment;
 import com.example.schoolkownclient.R;
 
 public class MineActivity_aboutus extends AppCompatActivity {
