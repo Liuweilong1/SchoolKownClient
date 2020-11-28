@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,6 +32,18 @@ public class MineActivity_signup extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mine_signup);
+
+        //返回跳转
+        ImageView back = findViewById(R.id.mine_back_signup);
+        back.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+
+                finish();
+            }
+        });
+
+
         btn = (Button) findViewById(R.id.dateChoose);
         //btn_true=(Button)findViewById(R.id.datetrue);
         dateDisplay = (TextView) findViewById(R.id.dateDisplay);

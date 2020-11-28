@@ -3,7 +3,9 @@ package com.example.schoolkownclient.Activity.Mine;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,6 +27,17 @@ public class MineActivity_personinformation extends AppCompatActivity {
             public void onClick(View view) {
 
                 finish();
+            }
+        });
+
+        Button update = findViewById(R.id.mine_pi_update);
+        update.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent();
+                intent.setClass(MineActivity_personinformation.this,MineActivity_pi_update.class);
+                startActivity(intent);
             }
         });
     }

@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,6 +26,16 @@ public class MineActivity_help extends AppCompatActivity {
             public void onClick(View view) {
 
                 finish();
+            }
+        });
+        LinearLayout questions = findViewById(R.id.mine_help_questions);
+        questions.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent();
+                intent.setClass(MineActivity_help.this,MineActivity_help_questions.class);
+                startActivity(intent);
             }
         });
     }
