@@ -29,6 +29,7 @@
         android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/mine_setup_safety_updatepassword"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:orientation="horizontal"

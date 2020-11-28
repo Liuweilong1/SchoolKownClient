@@ -201,7 +201,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center">
             <Button
-                android:id="@+id/login_btn_enter"
+                android:id="@+id/mine_pi_update"
                 android:layout_width="370dp"
                 android:layout_height="wrap_content"
                 android:text="修改个人信息"
