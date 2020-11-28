@@ -28,8 +28,7 @@
         android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="20dp"
-        android:background="#ffffff">
+        android:layout_marginTop="20dp">
         <LinearLayout
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
@@ -92,8 +91,7 @@
         android:layout_gravity="center"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="15dp"
-        android:background="#ffffff">
+        android:layout_marginTop="15dp">
         <LinearLayout
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"

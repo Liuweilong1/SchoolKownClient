@@ -1,9 +1,11 @@
 package com.example.schoolkownclient.Activity.Mine;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -25,6 +27,17 @@ public class MineActivity_aboutus extends AppCompatActivity {
             public void onClick(View view) {
 
                 finish();
+            }
+        });
+
+        LinearLayout aboutxx = findViewById(R.id.mine_aboutus_aboutxx);
+        aboutxx.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent();
+                intent.setClass(MineActivity_aboutus.this,MineActivity_aboutus_aboutxx.class);
+                startActivity(intent);
             }
         });
     }
