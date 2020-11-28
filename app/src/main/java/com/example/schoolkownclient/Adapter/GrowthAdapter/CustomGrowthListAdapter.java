@@ -57,9 +57,9 @@ public class CustomGrowthListAdapter extends BaseAdapter {
         GridView gridView=convertView.findViewById(R.id.growth_item_gridview);
         txt.setText(circles.get(position).getText());
         if(circles.get(position).getBitmaps().size()!=0){
-            CustomCirclePictureAdapter customCirclePictureAdapter=new CustomCirclePictureAdapter(context,R.layout.gridview_growth_item,circles.get(position).getBitmaps());
-            gridView.setAdapter(customCirclePictureAdapter);
-            customCirclePictureAdapter.notifyDataSetChanged();
+            CustomGrowthPictureAdapter customGrowthPictureAdapter=new CustomGrowthPictureAdapter(context,R.layout.gridview_growth_item,circles.get(position).getBitmaps());
+            gridView.setAdapter(customGrowthPictureAdapter);
+            customGrowthPictureAdapter.notifyDataSetChanged();
         }
 
 
