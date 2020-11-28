@@ -22,6 +22,7 @@ import androidx.fragment.app.Fragment;
 import com.example.schoolkownclient.Activity.MainActivity;
 import com.example.schoolkownclient.Activity.MyClassActivity.MemberActivity;
 import com.example.schoolkownclient.Activity.SchoolActivity.ListActivity;
+import com.example.schoolkownclient.Activity.SmallActivity.AttendActivity;
 import com.example.schoolkownclient.Activity.SmallActivity.GrowthActivity;
 import com.example.schoolkownclient.Activity.SmallActivity.RecipeActivity;
 import com.example.schoolkownclient.Adapter.HomeAdapter.CustomAbilityAdapter;
@@ -34,6 +35,8 @@ import com.example.schoolkownclient.Entities.MyGridView;
 import com.example.schoolkownclient.Entities.Teacher;
 import com.example.schoolkownclient.R;
 import com.youth.banner.Banner;
+import com.youth.banner.BannerConfig;
+import com.youth.banner.Transformer;
 
 
 import java.util.ArrayList;
@@ -53,6 +56,7 @@ public class HomeFragment extends Fragment {
     private TextView myclass;
     private TextView recipe;
     private TextView activity;
+    private TextView attend;
     @Nullable
     @Override
     public View onCreateView(@NonNull final LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -66,6 +70,7 @@ public class HomeFragment extends Fragment {
             growth=view.findViewById(R.id.home_growth);
             recipe=view.findViewById(R.id.home_recipe);
             activity=view.findViewById(R.id.home_activity);
+            attend=view.findViewById(R.id.home_attend);
             initArticle();
             articleListView=view.findViewById(R.id.listview_article);
             CustomArticleAdapter customArticleAdapter=new CustomArticleAdapter(getContext(),R.layout.listview_article_item,articles);
@@ -97,8 +102,19 @@ public class HomeFragment extends Fragment {
         images.add("https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=124643587,619926761&fm=11&gp=0.jpg");
         images.add("https://dss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1317487759,3407358820&fm=26&gp=0.jpg");
         images.add("https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1431143171,4188915397&fm=26&gp=0.jpg");
-
+//        images.add(R.drawable.xiaoxiong);
+//        images.add(R.drawable.xueyuxianguo);
+//        images.add(R.drawable.huanlesong);
+//        images.add(R.drawable.motianlun);
         banner.setImages(images);
+        //设置banner动画效果
+        banner.setBannerAnimation(Transformer.DepthPage);
+        //设置自动轮播，默认为true
+        banner.isAutoPlay(true);
+        //设置轮播时间
+        banner.setDelayTime(2500);
+        //设置指示器位置（当banner模式中有指示器时）
+        banner.setIndicatorGravity(BannerConfig.CENTER);
         //banner设置方法全部调用完毕时最后调用
         banner.start();
 
@@ -128,6 +144,13 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getContext(), ListActivity.class);
+                startActivity(intent);
+            }
+        });
+        attend.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(getContext(), AttendActivity.class);
                 startActivity(intent);
             }
         });

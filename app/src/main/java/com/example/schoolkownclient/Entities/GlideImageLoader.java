@@ -1,6 +1,8 @@
 package com.example.schoolkownclient.Entities;
 
 import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.widget.ImageView;
 
@@ -27,7 +29,7 @@ public class GlideImageLoader extends ImageLoader {
         //用fresco加载图片简单用法，记得要写下面的createImageView方法
         Uri uri = Uri.parse((String) path);
         imageView.setImageURI(uri);
-
+//        imageView.setImageBitmap(BitmapFactory.decodeResource(Resources.getSystem(),path));
     }
     //提供createImageView 方法，如果不用可以不重写这个方法，主要是方便自定义ImageView的创建
 //    @Override
