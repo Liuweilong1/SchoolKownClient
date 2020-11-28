@@ -53,8 +53,8 @@ public class CustomGrowthListAdapter extends BaseAdapter {
         //加载布局文件
         LayoutInflater inflater = LayoutInflater.from(context);
         convertView = inflater.inflate(res, null);
-        TextView txt=convertView.findViewById(R.id.circle_item_article);
-        GridView gridView=convertView.findViewById(R.id.circle_item_gridview);
+        TextView txt=convertView.findViewById(R.id.growth_item_article);
+        GridView gridView=convertView.findViewById(R.id.growth_item_gridview);
         txt.setText(circles.get(position).getText());
         if(circles.get(position).getBitmaps().size()!=0){
             CustomCirclePictureAdapter customCirclePictureAdapter=new CustomCirclePictureAdapter(context,R.layout.gridview_growth_item,circles.get(position).getBitmaps());
