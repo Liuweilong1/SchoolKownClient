@@ -35,6 +35,8 @@ import com.example.schoolkownclient.Entities.MyGridView;
 import com.example.schoolkownclient.Entities.Teacher;
 import com.example.schoolkownclient.R;
 import com.youth.banner.Banner;
+import com.youth.banner.BannerConfig;
+import com.youth.banner.Transformer;
 
 
 import java.util.ArrayList;
@@ -104,10 +106,15 @@ public class HomeFragment extends Fragment {
 //        images.add(R.drawable.xueyuxianguo);
 //        images.add(R.drawable.huanlesong);
 //        images.add(R.drawable.motianlun);
-
-
-
         banner.setImages(images);
+        //设置banner动画效果
+        banner.setBannerAnimation(Transformer.DepthPage);
+        //设置自动轮播，默认为true
+        banner.isAutoPlay(true);
+        //设置轮播时间
+        banner.setDelayTime(2500);
+        //设置指示器位置（当banner模式中有指示器时）
+        banner.setIndicatorGravity(BannerConfig.CENTER);
         //banner设置方法全部调用完毕时最后调用
         banner.start();
 
