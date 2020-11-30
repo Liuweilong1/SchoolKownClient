@@ -23,6 +23,7 @@
         <activity android:name=".Mine.MineActivity_setup_safety"/>
         <activity android:name=".Mine.MineActivity_setup_safety_updatepassword"/>
         <activity android:name=".Mine.MineActivity_setup_warn"/>
+        <activity android:name=".Mine.MineActivity_mine_help"/>
     </application>
 
 </manifest>
