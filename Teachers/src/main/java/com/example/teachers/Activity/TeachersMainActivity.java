@@ -111,6 +111,7 @@ public class TeachersMainActivity extends AppCompatActivity {
                         textViewMap.get("personal_tab").setTextColor(getResources().getColor(R.color.colorGrey));
                         break;
                     case "personal_tab":
+
                         imageIconViewMap.get("circle_tab").setImageResource(R.drawable.circle);
                         imageIconViewMap.get("news_tab").setImageResource(R.drawable.news);
                         imageIconViewMap.get("manage_tab").setImageResource(R.drawable.manage);

@@ -9,6 +9,7 @@
         android:orientation="vertical"
         android:background="@drawable/mine_good_bg">
         <Button
+            android:id="@+id/btn_back"
             android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:background="@drawable/back2"/>

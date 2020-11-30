@@ -2,6 +2,7 @@ package com.example.teachers.Mine;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TabHost;
 import android.widget.TextView;
@@ -19,6 +20,7 @@ import java.util.Map;
 
 public class MineGoodActivity extends AppCompatActivity {
 
+    private Button btnBack;
     private ImageView ivBlue;
     private Map<String, ImageView> imageViewMap=new HashMap<>();
     private Map<String, TextView> textViewMap = new HashMap<>();
@@ -26,6 +28,15 @@ public class MineGoodActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mine_good);
+
+        btnBack = findViewById(R.id.btn_back);
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
+
 
         FragmentTabHost fragmentTabHost = findViewById(android.R.id.tabhost);
 

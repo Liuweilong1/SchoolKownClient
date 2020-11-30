@@ -9,7 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Mine.MinePersonActivity"></activity>
         <activity android:name=".Activity.TeachersMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <!--Mine-->
         <activity android:name=".Mine.MineGoodActivity" />
         <activity android:name=".Mine.MineActivity_signup"/>
         <activity android:name=".Mine.MineActivity_setup"/>
@@ -24,6 +26,9 @@
         <activity android:name=".Mine.MineActivity_setup_safety_updatepassword"/>
         <activity android:name=".Mine.MineActivity_setup_warn"/>
         <activity android:name=".Mine.MineActivity_help"/>
+        <activity android:name=".Mine.MineActivity_questions"/>
+        <activity android:name=".Mine.MineActivity_pi_update"/>
+        <activity android:name=".Mine.MinePersonActivity"/>
     </application>
 
 </manifest>

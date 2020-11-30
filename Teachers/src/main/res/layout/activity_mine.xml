@@ -269,16 +269,6 @@
                 android:background="#E5E5E5"/>
         </LinearLayout>
 
-
-        <Button
-            android:layout_width="300dp"
-            android:layout_height="60dp"
-            android:layout_marginBottom="30dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:text="退出登录"
-            android:textSize="30sp"
-            android:background="@drawable/btn_circle_shape"/>
     </RelativeLayout>
 
 </LinearLayout>
