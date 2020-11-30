@@ -18,7 +18,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".Mine.MineGoodActivity" />
-        <activity android:name=".Mine.MineActivity_mine_help"/>
+        <activity android:name=".Mine.MineActivity_signup"/>
+        <activity android:name=".Mine.MineActivity_setup"/>
+        <activity android:name=".Mine.MineActivity_setup_safety"/>
+        <activity android:name=".Mine.MineActivity_setup_safety_updatepassword"/>
+        <activity android:name=".Mine.MineActivity_setup_warn"/>
     </application>
 
 </manifest>
