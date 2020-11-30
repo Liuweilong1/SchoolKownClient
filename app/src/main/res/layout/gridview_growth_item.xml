@@ -3,7 +3,7 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android" >
     <ImageView android:layout_width="40dp"
-        android:id="@+id/gridview_item_tv_img"
+        android:id="@+id/gridview_growth_item_tv_img"
         android:layout_centerInParent="true"
         android:layout_height="40dp" />
 </RelativeLayout>

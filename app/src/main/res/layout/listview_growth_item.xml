@@ -10,16 +10,16 @@
         android:layout_centerInParent="true"
         android:padding="15dp">
             <TextView
-                android:id="@+id/circle_item_article"
+                android:id="@+id/growth_item_article"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/colorMain"
                 android:paddingLeft="15dp"
                 android:text="圈子内容圈子内容圈子内容圈子内容圈子内容圈子内容圈子内容圈子内容圈子内容圈子内容圈子内容圈子内容圈子内容圈子内容圈子内容圈子内容" />
             <GridView
-                android:layout_below="@id/circle_item_article"
+                android:layout_below="@id/growth_item_article"
                 android:layout_marginTop="10dp"
-                android:id="@+id/circle_item_gridview"
+                android:id="@+id/growth_item_gridview"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:numColumns="3"/>

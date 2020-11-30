@@ -23,11 +23,19 @@
             android:textStyle="bold"
             android:layout_centerInParent="true"/>
     </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/R1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
     <EditText
         android:id="@+id/send_circle_context"
         android:layout_below="@id/R1"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="200dp"
         android:hint="输入内容（最多1000字）"
         android:gravity="top"
         android:minLines="10"
@@ -35,11 +43,23 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:background="@drawable/edit_circle_shape"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/send_circle_context">
+            <com.example.schoolkownclient.Entities.MyGridView
+                android:id="@+id/img_girdView"
+                android:layout_margin="10dp"
+                android:layout_above="@id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"/>
+        </LinearLayout>
+
     <LinearLayout
         android:id="@+id/l1"
-        android:layout_below="@id/send_circle_context"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="200dp"
         android:background="@drawable/liinearlayout_line_top_bottom"
         android:orientation="vertical"
         android:padding="20dp"
@@ -150,7 +170,9 @@
                 android:layout_alignParentRight="true"/>
         </RelativeLayout>
     </LinearLayout>
-    <Button android:layout_width="350dp"
+        </LinearLayout>
+    </ScrollView>
+    <Button android:layout_width="match_parent"
         android:id="@+id/send_btn"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -159,6 +181,5 @@
         android:text="发布圈子"
         android:textColor="#ffffff"
         android:textSize="23sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="20dp"/>
+        android:textStyle="bold"/>
 </RelativeLayout>

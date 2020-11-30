@@ -4,10 +4,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <com.example.schoolkownclient.Entities.RoundImageView
+        android:id="@+id/gridview_item_img"
         android:layout_width="110dp"
-        android:background="@drawable/linearlayout_line"
-        android:id="@+id/gridview_item_tv_img"
-        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:layout_margin="8dp"
+        android:layout_height="110dp"
         app:rect_adius="10"
-        android:layout_height="110dp" />
+        android:layout_centerInParent="true"/>
 </RelativeLayout>
