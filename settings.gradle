@@ -1,2 +1,2 @@
-include ':app'
+include ':Parents', ':Teachers'
 rootProject.name='SchoolKownClient'
