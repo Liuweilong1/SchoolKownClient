@@ -22,35 +22,29 @@
             android:textSize="25sp"/>
     </LinearLayout>
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="370dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
         android:orientation="vertical">
-        <TextView
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="30dp"
-            android:layout_width="350dp"
+        <EditText
+            android:layout_width="370dp"
+            android:layout_height="150dp"
+            android:maxLines="5"
+            android:layout_gravity="center"
+            android:hint="如您对校晓存在问题，欢迎反馈"
+            android:background="@drawable/edit_circle_shape"/>
+        <Button
+            android:id="@+id/login_btn_enter"
+            android:layout_width="370dp"
             android:layout_height="wrap_content"
-            android:text="\u0020        Q1：智慧树是什么？\n
-\u0020       A1：智慧树是国内最大的幼教互动云平台，致力于提升幼儿园的信息化水平，为幼儿园和家长搭建沟通互动新桥梁。一部手机管理一个校园，联系家长和幼儿园两端，这是提升幼儿园教育信息化水平的必然趋势，也是家园共育的全新方式。智慧树正是在这样的背景下应运而生，它不仅仅是一款幼儿成长教育软件，更是一个能使家长与幼儿园彼此信任、家长与孩子心灵贴近的沟通成长平台。
-"
-            />
-        <TextView
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="30dp"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:text="\u0020        Q1：智慧树是什么？\n
-\u0020       A1：智慧树是国内最大的幼教互动云平台，致力于提升幼儿园的信息化水平，为幼儿园和家长搭建沟通互动新桥梁。一部手机管理一个校园，联系家长和幼儿园两端，这是提升幼儿园教育信息化水平的必然趋势，也是家园共育的全新方式。智慧树正是在这样的背景下应运而生，它不仅仅是一款幼儿成长教育软件，更是一个能使家长与幼儿园彼此信任、家长与孩子心灵贴近的沟通成长平台。
-"
-            />
-        <TextView
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="30dp"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:text="\u0020        Q1：智慧树是什么？\n
-\u0020       A1：智慧树是国内最大的幼教互动云平台，致力于提升幼儿园的信息化水平，为幼儿园和家长搭建沟通互动新桥梁。一部手机管理一个校园，联系家长和幼儿园两端，这是提升幼儿园教育信息化水平的必然趋势，也是家园共育的全新方式。智慧树正是在这样的背景下应运而生，它不仅仅是一款幼儿成长教育软件，更是一个能使家长与幼儿园彼此信任、家长与孩子心灵贴近的沟通成长平台。
-"
-            />
+            android:text="提交反馈"
+            android:layout_below="@id/login_pwd"
+            android:background="@drawable/btn_circle_shape"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"/>
     </LinearLayout>
 </LinearLayout>
