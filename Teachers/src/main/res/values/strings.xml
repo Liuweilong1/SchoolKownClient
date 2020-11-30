@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">Teachers</string>
+
+    <string name="title">填写标题会有更多赞哦</string>
+    <string name="content">添加正文</string>
 </resources>

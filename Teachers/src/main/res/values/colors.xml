@@ -5,6 +5,9 @@
     <color name="colorAccent">#D81B60</color>
     <color name="colorMain">#6f79ff</color>
 
+    <color name="mainColor_deep">#9ba3f2</color>
+    <color name="black">#000000</color>
+
     <color name="colorMainLight">#9ba3f2</color>
     <color name="colorBlack">#000000</color>
     <color name="colorBackgroud">#f9f9f9</color>
