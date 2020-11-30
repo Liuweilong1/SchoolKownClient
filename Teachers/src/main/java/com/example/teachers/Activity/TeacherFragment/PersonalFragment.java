@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.teachers.Mine.MineActivity_help;
 import com.example.teachers.Mine.MineActivity_setup;
 import com.example.teachers.Mine.MineGoodActivity;
 import com.example.teachers.Mine.MinePersonActivity;
@@ -67,6 +68,15 @@ public class PersonalFragment extends Fragment {
 
         btnHelp = view.findViewById(R.id.btn_help);
         btnHelp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity().getApplicationContext(), MineActivity_help.class);
+                startActivity(intent);
+            }
+        });
+
+        btnGetback = view.findViewById(R.id.btn_getBack);
+        btnGetback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity().getApplicationContext(),MineActivity_setup.class);
