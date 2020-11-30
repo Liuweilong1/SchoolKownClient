@@ -61,6 +61,7 @@ public class CircleFragment extends Fragment implements View.OnClickListener {
         lin_sub2.setBackground(getResources().getDrawable(R.drawable.fragment_line_dark));
         txtClass.setTextColor(getResources().getColor(R.color.colorTwoDark));
         txtParent.setTextColor(getResources().getColor(R.color.colorWhite));
+        publishCircle.setVisibility(View.INVISIBLE);
     }
 
     protected void setLinstener() {
@@ -78,7 +79,7 @@ public class CircleFragment extends Fragment implements View.OnClickListener {
                 lin_sub2.setBackground(getResources().getDrawable(R.drawable.fragment_line_dark));
                 txtClass.setTextColor(getResources().getColor(R.color.colorTwoDark));
                 txtParent.setTextColor(getResources().getColor(R.color.colorWhite));
-
+                publishCircle.setVisibility(View.INVISIBLE);
                 break;
             case R.id.lin_parent:
                 setSubFragment(1);
@@ -86,6 +87,7 @@ public class CircleFragment extends Fragment implements View.OnClickListener {
                 lin_sub2.setBackground(getResources().getDrawable(R.drawable.fragment_line_light));
                 txtClass.setTextColor(getResources().getColor(R.color.colorWhite));
                 txtParent.setTextColor(getResources().getColor(R.color.colorTwoDark));
+                publishCircle.setVisibility(View.VISIBLE);
                 break;
             case R.id.circle_publish:
                 Intent intent=new Intent(getContext(), SendCircleActivity.class);
