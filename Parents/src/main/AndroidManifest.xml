@@ -84,6 +84,7 @@
         <activity android:name=".Activity.SchoolActivity.ListActivity"/>
         <activity android:name=".Activity.SchoolActivity.ListDetailActivity"/>
         <activity android:name=".Activity.AdPage.LeadActivity"/>
+        <activity android:name=".Activity.Shop.ShopShop"/>
     </application>
 
 </manifest>
