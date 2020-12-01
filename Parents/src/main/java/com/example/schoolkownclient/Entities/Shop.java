@@ -1,19 +1,26 @@
 package com.example.schoolkownclient.Entities;
 
-public class Shop {
+import android.graphics.Bitmap;
+
+import java.io.Serializable;
+
+
+public class Shop implements Serializable {
     private int id;
     private String name;
+    private String price;
     private String scoring;
     private String introduction;
-    private String picture;
+    private Bitmap picture;
 
     public Shop() {
 
     }
 
-    public Shop(int id, String name, String scoring, String introduction, String picture) {
+    public Shop(int id, String name, String price, String scoring, String introduction, Bitmap picture) {
         this.id = id;
         this.name = name;
+        this.price = price;
         this.scoring = scoring;
         this.introduction = introduction;
         this.picture = picture;
@@ -51,12 +58,20 @@ public class Shop {
         this.introduction = introduction;
     }
 
-    public String getPicture() {
+    public Bitmap getPicture() {
         return picture;
     }
 
-    public void setPicture(String picture) {
+    public void setPicture(Bitmap picture) {
         this.picture = picture;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
     }
 
     @Override
@@ -64,6 +79,7 @@ public class Shop {
         return "Shop{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", price=" + price +
                 ", scoring='" + scoring + '\'' +
                 ", introduction='" + introduction + '\'' +
                 ", picture='" + picture + '\'' +

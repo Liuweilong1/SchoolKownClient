@@ -54,7 +54,13 @@
         <activity android:name=".Activity.AdPage.SplashActivity">
 
         </activity>
-        <activity android:name=".Activity.Shop.ShopActivity"/>
+        <activity android:name=".Activity.Shop.ShopActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
 
         <!--Mine-->
@@ -86,6 +92,7 @@
         <activity android:name=".Activity.SchoolActivity.ListActivity"/>
         <activity android:name=".Activity.SchoolActivity.ListDetailActivity"/>
         <activity android:name=".Activity.AdPage.LeadActivity"/>
+        <activity android:name=".Activity.Shop.ShopShop"/>
     </application>
 
 </manifest>

@@ -3,174 +3,174 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp">
-    <Button
-        android:id="@+id/btn_back"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="@drawable/back"/>
+<!--    <Button-->
+<!--        android:id="@+id/btn_back"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:background="@drawable/back"/>-->
 
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="130dp"
-        android:layout_marginTop="20dp">
+<!--    <ListView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="130dp"-->
+<!--        android:layout_marginTop="20dp">-->
 
-    </ListView>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
-        <TextView
-            android:id="@+id/tv_title"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:hint="@string/title"
-            android:textSize="30sp"/>
-    </LinearLayout>
+<!--    </ListView>-->
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginTop="10dp"
-        android:background="#E5E5E5"/>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp">-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_title"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:hint="@string/title"-->
+<!--            android:textSize="30sp"/>-->
+<!--    </LinearLayout>-->
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="20dp">
-        <TextView
-            android:id="@+id/tv_context"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:hint="@string/content"
-            android:textSize="25sp"/>
-    </LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:background="#E5E5E5"/>-->
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginTop="10dp"
-        android:background="#E5E5E5"/>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_marginTop="20dp">-->
+<!--        <TextView-->
+<!--            android:id="@+id/tv_context"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:hint="@string/content"-->
+<!--            android:textSize="25sp"/>-->
+<!--    </LinearLayout>-->
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:layout_marginTop="20dp">
-        <ImageView
-            android:id="@+id/iv_topic"
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:src="@drawable/topic"/>
-        <TextView
-            android:layout_width="120dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="5dp"
-            android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/iv_topic"
-            android:text="参与话题"
-            android:textSize="27sp"
-            android:textColor="#000000"/>
-        <Button
-            android:id="@+id/btn_topic"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:background="@drawable/back3"/>
-    </RelativeLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:background="#E5E5E5"/>-->
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginTop="20dp"
-        android:background="#E5E5E5"/>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:orientation="vertical">
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="20dp">
-            <ImageView
-                android:id="@+id/iv_address"
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:src="@drawable/address"/>
-            <TextView
-                android:layout_width="120dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="5dp"
-                android:layout_centerVertical="true"
-                android:layout_toRightOf="@+id/iv_address"
-                android:text="添加地点"
-                android:textSize="27sp"
-                android:textColor="#000000"/>
-            <Button
-                android:id="@+id/btn_address"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:background="@drawable/back3"/>
-        </RelativeLayout>
-
-    </LinearLayout>
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_marginTop="20dp">-->
+<!--        <ImageView-->
+<!--            android:id="@+id/iv_topic"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:src="@drawable/topic"/>-->
+<!--        <TextView-->
+<!--            android:layout_width="120dp"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_toRightOf="@+id/iv_topic"-->
+<!--            android:text="参与话题"-->
+<!--            android:textSize="27sp"-->
+<!--            android:textColor="#000000"/>-->
+<!--        <Button-->
+<!--            android:id="@+id/btn_topic"-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:background="@drawable/back3"/>-->
+<!--    </RelativeLayout>-->
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginTop="20dp"
-        android:background="#E5E5E5"/>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:background="#E5E5E5"/>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:orientation="vertical">-->
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginTop="20dp">-->
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_address"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:src="@drawable/address"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="120dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_toRightOf="@+id/iv_address"-->
+<!--                android:text="添加地点"-->
+<!--                android:textSize="27sp"-->
+<!--                android:textColor="#000000"/>-->
+<!--            <Button-->
+<!--                android:id="@+id/btn_address"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:background="@drawable/back3"/>-->
+<!--        </RelativeLayout>-->
+
+<!--    </LinearLayout>-->
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="20dp">
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:orientation="vertical"
-            android:layout_alignParentBottom="true">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="2dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:background="#E5E5E5"/>-->
 
-            <Button
-                android:id="@+id/btn_get"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginLeft="20dp"
-                android:background="@drawable/getblack" />
 
-            <TextView
-                android:layout_width="100dp"
-                android:layout_height="30dp"
-                android:layout_alignParentBottom="true"
-                android:text="存草稿"
-                android:textColor="#000000"
-                android:textSize="25sp" />
-        </LinearLayout>
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="20dp">-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentLeft="true"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_alignParentBottom="true">-->
 
-        <Button
-            android:id="@+id/btn_notice"
-            android:layout_width="220dp"
-            android:layout_height="80dp"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:text="发布通知"
-            android:textSize="30sp"
-            android:background="@color/mainColor_deep"/>
-    </RelativeLayout>
+<!--            <Button-->
+<!--                android:id="@+id/btn_get"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_marginLeft="20dp"-->
+<!--                android:background="@drawable/getblack" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="30dp"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:text="存草稿"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="25sp" />-->
+<!--        </LinearLayout>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btn_notice"-->
+<!--            android:layout_width="220dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_alignParentRight="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:text="发布通知"-->
+<!--            android:textSize="30sp"-->
+<!--            android:background="@color/mainColor_deep"/>-->
+<!--    </RelativeLayout>-->
 
 </LinearLayout>

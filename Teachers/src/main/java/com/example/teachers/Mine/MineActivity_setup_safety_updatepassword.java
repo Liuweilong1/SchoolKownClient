@@ -1,7 +1,12 @@
 package com.example.teachers.Mine;
 
 import android.os.Bundle;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
 import android.view.View;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 import androidx.annotation.Nullable;
@@ -11,6 +16,7 @@ import com.example.teachers.R;
 
 
 public class MineActivity_setup_safety_updatepassword extends AppCompatActivity {
+
 
 
     @Override
@@ -27,5 +33,7 @@ public class MineActivity_setup_safety_updatepassword extends AppCompatActivity 
                 finish();
             }
         });
+
+
     }
 }
