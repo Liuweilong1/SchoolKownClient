@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:background="#FFF0F5"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_shopview"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/iphone12"/>
+            <TextView
+                android:id="@+id/tv_shopname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="iphone12"
+                android:gravity="center"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/tv_shopscoring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="【12期白条免息限量抢】A14仿生芯片，6.1英寸超视网膜XDR显示屏，升维大提速，现实力登场！点击抢券" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/tv_shopprice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="80000积分"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

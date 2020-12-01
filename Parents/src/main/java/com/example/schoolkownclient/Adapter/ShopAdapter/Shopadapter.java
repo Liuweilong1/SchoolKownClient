@@ -1,21 +1,25 @@
 package com.example.schoolkownclient.Adapter.ShopAdapter;
 
 import android.content.Context;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 
 import com.example.schoolkownclient.Entities.Shop;
+import com.example.schoolkownclient.R;
 
 import java.util.List;
 
-public class shopadapter extends BaseAdapter{
+public class Shopadapter extends BaseAdapter{
     private Context mContext;
     private List<Shop> shops;
     private int itemLayoutRes;
 
-    public shopadapter(Context mContext, List<Shop> shops, int itemLayoutRes) {
+    public Shopadapter(Context mContext, List<Shop> shops, int itemLayoutRes) {
         this.mContext = mContext;
         this.shops = shops;
         this.itemLayoutRes = itemLayoutRes;
@@ -45,7 +49,18 @@ public class shopadapter extends BaseAdapter{
     @Override
     //获取每个item的视图对象
     public View getView(final int position, View convertView, ViewGroup parent) {
-
+        //convertView是每个item的视图对象
+        //加载布局文件
+        LayoutInflater inflater = LayoutInflater.from(mContext);//布局填充器
+        convertView = inflater.inflate(itemLayoutRes, null);
+        ImageView imageView = convertView.findViewById(R.id.iv_shopview);
+        TextView name = convertView.findViewById(R.id.tv_shopname);
+        TextView price = convertView.findViewById(R.id.tv_shopprice);
+        TextView scoring = convertView.findViewById(R.id.tv_shopscoring);
+        imageView.setImageBitmap(shops.get(position).getPicture());
+        name.setText(shops.get(position).getName());
+        price.setText(shops.get(position).getPrice());
+        scoring.setText(shops.get(position).getScoring());
 
         return convertView;
     }
