@@ -27,18 +27,20 @@
                 android:id="@+id/tv_shopscoring"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:text="【12期白条免息限量抢】A14仿生芯片，6.1英寸超视网膜XDR显示屏，升维大提速，现实力登场！点击抢券" />
+                android:textSize="10sp"
+                android:text="A14仿生芯片，6.1英寸超视网膜XDR显示屏，升维大提速，现实力登场!" />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical">
                 <TextView
                     android:id="@+id/tv_shopprice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
                     android:text="80000积分"
-                    android:textSize="20sp"/>
+                    android:textColor="#f00"
+                    android:textSize="25sp"/>
 
             </LinearLayout>
         </LinearLayout>
