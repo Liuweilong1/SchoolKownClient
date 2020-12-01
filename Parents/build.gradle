@@ -1,5 +1,14 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.mob.sdk'
 
+MobSDK {
+    appKey "319dd51016cfb"
+    appSecret "938b3424a41fe623c553ce1aac4b5396"
+    SMSSDK {
+        mobileAuth true //打开短信本机号认证功能(3.7.0及以上版本)
+        autoSMS true//自动填充
+    }
+}
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
