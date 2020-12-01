@@ -18,6 +18,8 @@ import com.example.schoolkownclient.R;
 
 import java.util.Calendar;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
+
 /*
 预约时间表 安卓自带的时间表
  */
@@ -78,8 +80,13 @@ public class MineActivity_signup extends AppCompatActivity {
 //                startActivity(intent2);
 //                break;
             case R.id.datetrue:
-                Toast toast=Toast.makeText(getApplicationContext(), "签到成功", Toast.LENGTH_SHORT);
-                toast.show();
+//                Toast toast=Toast.makeText(getApplicationContext(), "签到成功", Toast.LENGTH_SHORT);
+//                toast.show();
+                new SweetAlertDialog(this, SweetAlertDialog.SUCCESS_TYPE)
+                        .setTitleText("签到成功!")
+                        .setContentText("增加200积分!")
+                        .show();
+
                 break;
         }
     }
