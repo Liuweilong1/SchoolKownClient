@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="school_name">
+        <item>希望小学</item>
+        <item>开心小学</item>
+        <item>快乐小学</item>
+    </string-array>
+    <string-array name="class_name">
+        <item>一班</item>
+        <item>二班</item>
+        <item>三班</item>
+    </string-array>
+</resources>

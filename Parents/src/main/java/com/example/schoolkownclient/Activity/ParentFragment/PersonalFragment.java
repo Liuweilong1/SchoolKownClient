@@ -18,6 +18,7 @@ import com.example.schoolkownclient.Activity.Mine.MineActivity_help;
 import com.example.schoolkownclient.Activity.Mine.MineActivity_personinformation;
 import com.example.schoolkownclient.Activity.Mine.MineActivity_setup;
 import com.example.schoolkownclient.Activity.Mine.MineActivity_signup;
+import com.example.schoolkownclient.Activity.Mine.MineActivity_student;
 import com.example.schoolkownclient.Activity.Shop.ShopActivity;
 import com.example.schoolkownclient.R;
 
@@ -30,6 +31,7 @@ public class PersonalFragment extends Fragment {
     private LinearLayout help;
     private LinearLayout setup;
     private LinearLayout aboutus;
+    private LinearLayout student;
 
     @Nullable
     @Override
@@ -44,6 +46,7 @@ public class PersonalFragment extends Fragment {
             help = view.findViewById(R.id.mine_help);
             setup = view.findViewById(R.id.mine_setup);
             aboutus = view.findViewById(R.id.mine_aboutus);
+            student = view.findViewById(R.id.mine_student);
 
         }
         personinformation.setOnClickListener(new View.OnClickListener(){
@@ -106,6 +109,15 @@ public class PersonalFragment extends Fragment {
 
                 Intent intent = new Intent();
                 intent.setClass(getContext(), MineActivity_aboutus.class);
+                startActivity(intent);
+            }
+        });
+        student.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent();
+                intent.setClass(getContext(), MineActivity_student.class);
                 startActivity(intent);
             }
         });
