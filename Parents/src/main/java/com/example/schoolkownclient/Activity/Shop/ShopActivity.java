@@ -30,9 +30,7 @@ public class ShopActivity extends AppCompatActivity {
         shop.setPrice("80000积分");
         shop.setIntroduction("超级视网膜XDR显示屏，分辨率为2532x1170，对比度为200万：1，亮度高达1200尼特，支持杜比视界和HDR10。\n" +
                 "采用六核A14 Bionic芯片。\n" +
-                "5G连接，支持的频段比其他智能手机都多。\n" +
-                "双镜头后置摄像头系统，配备1200万像素超广角和广角镜头以及7元件镜头，低光性能提升27%。 [3] \n" +
-                "防摔性能提升了4倍");
+                "双镜头后置摄像头系统，配备1200万像素超广角和广角镜头以及7元件镜头，低光性能提升27%。 [3] \n" );
         shop.setPicture(BitmapFactory.decodeResource(getResources(),R.drawable.iphone12));
         shop.setScoring("【12期白条免息限量抢】A14仿生芯片，6.1英寸超视网膜XDR显示屏，升维大提速，现实力登场！点击抢券");
         shops.add(shop);
