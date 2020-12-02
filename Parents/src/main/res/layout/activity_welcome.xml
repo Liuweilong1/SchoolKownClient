@@ -6,7 +6,6 @@
     android:clipToPadding="true">
 
     <com.dev.sacot41.scviewpager.SCViewPager
-
         android:id="@+id/viewpager_main_activity"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -60,7 +59,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="We know that what you like"
+            android:text="Home⇋School Communications"
             android:textColor="@color/white"
             android:textSize="42px" />
 
@@ -68,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15px"
-            android:text="你喜欢的我们都懂"
+            android:text="家校互通 毫不费力"
             android:textColor="@color/white"
             android:textSize="42px" />
 
@@ -105,7 +104,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="25px"
-            android:text="We have everything you "
+            android:text="School Bus Positioning"
             android:textColor="@color/white"
             android:textSize="42px" />
 
@@ -113,7 +112,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15px"
-            android:text="你想看的这里都有"
+            android:text="校车定位 实时关注"
             android:textColor="@color/white"
             android:textSize="42px" />
 
@@ -171,7 +170,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="All the stars are gather here"
+            android:text="Various Functions for You"
             android:textColor="@color/white"
             android:textSize="42px" />
 
@@ -179,7 +178,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15px"
-            android:text="明星大咖全网搜罗"
+            android:text="功能多样 全面互动"
             android:textColor="@color/white"
             android:textSize="42px" />
 
@@ -196,12 +195,12 @@
         android:visibility="visible" />
 
     <ImageView
-        android:layout_marginBottom="180px"
+        android:layout_marginBottom="210px"
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:id="@+id/imageview_main_connected_device"
         android:layout_width="440px"
-        android:layout_height="130px"
+        android:layout_height="100px"
         android:src="@mipmap/startbg"
         android:visibility="visible" />
 
