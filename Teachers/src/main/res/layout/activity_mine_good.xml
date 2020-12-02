@@ -45,31 +45,23 @@
         android:layout_marginTop="10dp"
         android:background="#E5E5E5"/>
 
-    <androidx.fragment.app.FragmentTabHost
-        android:id="@android:id/tabhost"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
+        android:layout_height="80dp"
+        android:orientation="horizontal">
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TabWidget
-                android:id="@android:id/tabs"
-                android:layout_width="match_parent"
+            android:layout_width="205dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_one"
+                android:layout_width="100dp"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"/>
-
-            <FrameLayout
-                android:id="@android:id/tabcontent"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_above="@android:id/tabs"/>
-
+                android:text="谁赞了我"
+                android:layout_centerInParent="true"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="4dp"/>
         </RelativeLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="2dp" />
-    </androidx.fragment.app.FragmentTabHost>
+    </LinearLayout>
 </LinearLayout>
