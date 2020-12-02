@@ -46,6 +46,7 @@ public class SplashActivity extends Activity {
                 Intent it=new Intent(getApplicationContext(),LeadActivity.class);//启动MainActivity
                 startActivity(it);
                 finish();//关闭当前活动
+
             } else {
                 tvTime.setText(time + "秒");
                 handler.sendEmptyMessageDelayed(1, 1000);
