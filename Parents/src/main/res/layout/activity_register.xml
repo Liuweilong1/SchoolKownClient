@@ -18,34 +18,67 @@
         android:layout_below="@id/register_close"
         android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"/>
+    <RelativeLayout
+        android:id="@+id/R1"
+        android:layout_width="match_parent"
+        android:layout_below="@id/login_logo"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <TextView
+            android:id="@+id/tvCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/ivSelectCountry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/smssdk_white_right_arrow" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/smssdk_white_line" />
+    </RelativeLayout>
     <EditText
-        android:id="@+id/register_tel"
+        android:id="@+id/etPhone"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:hint="请输入手机号"
         android:inputType="text"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/login_logo"
-        android:layout_marginTop="30dp"
+        android:layout_below="@id/R1"
+        android:layout_marginTop="15dp"
         android:background="@drawable/edit_circle_shape"/>
     <EditText
-        android:id="@+id/register_code"
+        android:id="@+id/etCode"
         android:layout_width="270dp"
         android:layout_height="wrap_content"
         android:hint="请输入验证码"
-        android:layout_marginLeft="30dp"
         android:inputType="numberPassword"
         android:layout_marginTop="20dp"
-        android:layout_below="@id/register_tel"
+        android:layout_below="@id/etPhone"
         android:background="@drawable/edit_circle_shape"/>
     <Button
-        android:id="@+id/register_get_code"
+        android:id="@+id/tvCode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/register_tel"
+        android:layout_below="@id/etPhone"
         android:text="获取验证码"
         android:layout_marginTop="20dp"
-        android:layout_toRightOf="@id/register_code"
+        android:layout_toRightOf="@id/etCode"
         android:background="@drawable/edit_circle_shape"/>
     <EditText
         android:id="@+id/register_pwd"
@@ -54,10 +87,10 @@
         android:layout_marginTop="20dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/register_code"
+        android:layout_below="@id/etCode"
         android:background="@drawable/edit_circle_shape"/>
     <Button
-        android:id="@+id/register_finish"
+        android:id="@+id/tvVerify"
         android:layout_width="360dp"
         android:layout_height="wrap_content"
         android:text="完成"
@@ -75,7 +108,7 @@
             android:text="我已阅读并同意"
             android:layout_marginLeft="20dp"
             android:layout_marginTop="20dp"
-            android:layout_below="@id/register_finish"/>
+            android:layout_below="@id/tvVerify"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -84,5 +117,5 @@
         android:textColor="#ff0000"
         android:layout_marginTop="25dp"
         android:layout_toRightOf="@id/register_radio"
-        android:layout_below="@id/register_finish"/>
+        android:layout_below="@id/tvVerify"/>
 </RelativeLayout>

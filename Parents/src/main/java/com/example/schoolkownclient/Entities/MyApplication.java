@@ -2,6 +2,8 @@ package com.example.schoolkownclient.Entities;
 
 import android.app.Application;
 
+import com.mob.MobApplication;
+
 public class MyApplication extends Application {
     private static MyApplication mApplication;
 

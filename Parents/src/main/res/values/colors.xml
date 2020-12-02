@@ -23,4 +23,9 @@
     <color name="color_b0b8b2">#b0b8b2</color>
     <color name="color_28d19d">#28d19d</color>
     <color name="color_000000">#000000</color>
+    <color name="smssdk_green">#08979C</color>
+    <color name="smssdk_white_line">#14ffffff</color>
+    <color name="smssdk_hint_textcolor">#7fffffff</color>
+    <color name="smssdk_text_green">#099A9F</color>
+    <color name="colorTextColor">#656565</color>
 </resources>
