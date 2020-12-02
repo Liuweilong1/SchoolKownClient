@@ -50,6 +50,7 @@ public class SplashActivity extends Activity {
             } else {
                 tvTime.setText(time + "秒");
                 handler.sendEmptyMessageDelayed(1, 1000);
+
             }
         }
     };
