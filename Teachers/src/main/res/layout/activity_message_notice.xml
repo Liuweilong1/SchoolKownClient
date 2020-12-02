@@ -102,21 +102,21 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="20dp">
-            <ImageView
-                android:id="@+id/iv_address"
-                android:layout_width="30dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:src="@drawable/address"/>
-            <TextView
-                android:layout_width="120dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="5dp"
-                android:layout_centerVertical="true"
-                android:layout_toRightOf="@+id/iv_address"
-                android:text="添加地点"
-                android:textSize="27sp"
-                android:textColor="#000000"/>
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_address"-->
+<!--                android:layout_width="30dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignParentLeft="true"-->
+<!--                android:src="@drawable/address"/>-->
+<!--            <TextView-->
+<!--                android:layout_width="120dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_marginLeft="5dp"-->
+<!--                android:layout_centerVertical="true"-->
+<!--                android:layout_toRightOf="@+id/iv_address"-->
+<!--                android:text="添加地点"-->
+<!--                android:textSize="27sp"-->
+<!--                android:textColor="#000000"/>-->
             <Button
                 android:id="@+id/btn_address"
                 android:layout_width="30dp"
