@@ -146,6 +146,7 @@
             android:textColor="@color/colorTextColor"
             android:text="在线申请"
             android:textStyle="bold"
+            android:id="@+id/applybtn"
             android:drawableTop="@drawable/apply"
             android:drawablePadding="10dp"/>
 

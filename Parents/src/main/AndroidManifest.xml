@@ -1,69 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.schoolkownclient"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.schoolkownclient">
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <!-- 可选权限说明-->
-    <uses-permission
-        android:name="android.permission.INTERNET" />
-<!--    允许应用程序联网（必须）-->
-    <uses-permission
-        android:name="android.permission.ACCESS_WIFI_STATE" />
-<!--    允许访问WiFi网络状态信息（必须）-->
-    <uses-permission
-        android:name="android.permission.READ_PHONE_STATE" />
-<!--    允许读取手机状态（必须）-->
-    <uses-permission
-        android:name="android.permission.ACCESS_NETWORK_STATE" />
-<!--    允许访问网络状态（必须）-->
-    <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-<!--    允许写手机存储（必须）-->
-    <uses-permission
-        android:name="android.permission.RECEIVE_SMS" />
-  <!--  GUI自动填充验证码功能（非必须）&lt;!&ndash;&ndash;&gt;-->
-    <uses-permission
-        android:name="android.permission.READ_SMS" />
-<!--    从短信中读取验证码接口（非必须）-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 可选权限说明 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 允许应用程序联网（必须） -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 允许访问WiFi网络状态信息（必须） -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 允许读取手机状态（必须） -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 允许访问网络状态（必须） -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 允许写手机存储（必须） -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" /> <!-- GUI自动填充验证码功能（非必须）&lt;!&ndash;&ndash;&gt; -->
+    <uses-permission android:name="android.permission.READ_SMS" />
+
     <application
+        android:name=".Entities.MyApplication"
         android:allowBackup="true"
         android:icon="@drawable/logo"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        tools:replace="android:icon,android:theme,android:allowBackup"
-        android:name=".Entities.MyApplication"
-        android:requestLegacyExternalStorage="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
-
-        </activity>
-
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon,android:theme,android:allowBackup">
+        <activity android:name=".Activity.Apply.SubmitApply"></activity>
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".Activity.MyClassActivity.ChatActivity" />
         <activity android:name=".Activity.MyClassActivity.MemberActivity" />
-        <activity android:name=".Activity.LoginActivity.RegisterActivity" >
-
-        </activity>
+        <activity android:name=".Activity.LoginActivity.RegisterActivity"></activity>
         <activity android:name=".Activity.LoginActivity.ForgetPwdActivity" />
-        <activity android:name=".Activity.LoginActivity.LoginActivity">
-
-        </activity>
-        <activity android:name=".Activity.SmallActivity.AttendActivity"/>
-        <activity android:name=".Activity.AdPage.SplashActivity">
-
-        </activity>
-        <activity android:name=".Activity.Shop.ShopActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-
-
-        <!--Mine-->
+        <activity android:name=".Activity.LoginActivity.LoginActivity"></activity>
+        <activity android:name=".Activity.SmallActivity.AttendActivity" />
+        <activity android:name=".Activity.AdPage.SplashActivity"></activity>
+        <activity android:name=".Activity.Shop.ShopActivity"></activity> <!-- Mine -->
         <activity android:name=".Activity.ParentMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -71,29 +41,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activity.Mine.MineActivity_collections"/>
-        <activity android:name=".Activity.Mine.MineActivity"/>
-        <activity android:name=".Activity.Mine.MineActivity_signup"/>
-        <activity android:name=".Activity.Mine.MineActivity_personinformation"/>
-        <activity android:name=".Activity.Mine.MineActivity_aboutus"/>
-        <activity android:name=".Activity.SmallActivity.GrowthActivity"/>
-        <activity android:name=".Activity.Mine.MineActivity_help"/>
-        <activity android:name=".Activity.Mine.MineActivity_setup"/>
-        <activity android:name=".Activity.Mine.MineActivity_student"/>
-        <activity android:name=".Activity.Mine.MineActivity_aboutus_aboutxx"/>
-        <activity android:name=".Activity.Mine.MineActivity_help_questions"/>
-        <activity android:name=".Activity.Mine.MineActivity_pi_update"/>
-        <activity android:name=".Activity.Mine.MineActivity_setup_safety"/>
-        <activity android:name=".Activity.Mine.MineActivity_setup_safety_updatepassword"/>
-        <activity android:name=".Activity.Mine.MineActivity_setup_warn"/>
-        <activity android:name=".Activity.SmallActivity.SendCircleActivity"/>
-        <activity android:name=".Activity.SmallActivity.RecipeActivity"/>
-
-        <!--SchoolActivity-->
-        <activity android:name=".Activity.SchoolActivity.ListActivity"/>
-        <activity android:name=".Activity.SchoolActivity.ListDetailActivity"/>
-        <activity android:name=".Activity.AdPage.LeadActivity"/>
-        <activity android:name=".Activity.Shop.ShopShop"/>
+        <activity android:name=".Activity.Mine.MineActivity_collections" />
+        <activity android:name=".Activity.Mine.MineActivity" />
+        <activity android:name=".Activity.Mine.MineActivity_signup" />
+        <activity android:name=".Activity.Mine.MineActivity_personinformation" />
+        <activity android:name=".Activity.Mine.MineActivity_aboutus" />
+        <activity android:name=".Activity.SmallActivity.GrowthActivity" />
+        <activity android:name=".Activity.Mine.MineActivity_help" />
+        <activity android:name=".Activity.Mine.MineActivity_setup" />
+        <activity android:name=".Activity.Mine.MineActivity_student" />
+        <activity android:name=".Activity.Mine.MineActivity_aboutus_aboutxx" />
+        <activity android:name=".Activity.Mine.MineActivity_help_questions" />
+        <activity android:name=".Activity.Mine.MineActivity_pi_update" />
+        <activity android:name=".Activity.Mine.MineActivity_setup_safety" />
+        <activity android:name=".Activity.Mine.MineActivity_setup_safety_updatepassword" />
+        <activity android:name=".Activity.Mine.MineActivity_setup_warn" />
+        <activity android:name=".Activity.SmallActivity.SendCircleActivity" />
+        <activity android:name=".Activity.SmallActivity.RecipeActivity" /> <!-- SchoolActivity -->
+        <activity android:name=".Activity.SchoolActivity.ListActivity" />
+        <activity android:name=".Activity.SchoolActivity.ListDetailActivity" />
+        <activity android:name=".Activity.AdPage.LeadActivity" />
+        <activity android:name=".Activity.Shop.ShopShop" />
     </application>
 
 </manifest>
