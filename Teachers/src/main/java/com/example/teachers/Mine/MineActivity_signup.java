@@ -3,6 +3,7 @@ package com.example.teachers.Mine;
 
 import android.app.DatePickerDialog;
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -12,8 +13,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 
+import com.example.teachers.Activity.TeacherFragment.PersonalFragment;
 import com.example.teachers.R;
 
 import java.util.Calendar;
@@ -45,6 +49,7 @@ public class MineActivity_signup extends AppCompatActivity {
 
 
         btn = (Button) findViewById(R.id.dateChoose);
+        btn_true = findViewById(R.id.datetrue);
         //btn_true=(Button)findViewById(R.id.datetrue);
         dateDisplay = (TextView) findViewById(R.id.dateDisplay);
         btn.setOnClickListener(new View.OnClickListener() {
@@ -53,33 +58,24 @@ public class MineActivity_signup extends AppCompatActivity {
                 showDialog(DATE_DIALOG);
             }
         });
-//        btn_true.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                // 给bnt1添加点击响应事件
-////                Intent intent2=new Intent(Forward.this, Patient_ChatRoom.class);
-////                //启动
-////                startActivity(intent2);
-//                Toast toast=Toast.makeText(getApplicationContext(), "预约成功", Toast.LENGTH_SHORT);
-//                toast.show();
-//            }
-//        });
+
         final Calendar ca = Calendar.getInstance();
         mYear = ca.get(Calendar.YEAR);
         mMonth = ca.get(Calendar.MONTH);
         mDay = ca.get(Calendar.DAY_OF_MONTH);
+
+        dateDisplay.setText(mYear+"-"+mMonth+"-"+mDay);
     }
     public void onClick(View view){
         switch (view.getId()){
-//            case R.id.back:
-//                // 给bnt1添加点击响应事件
-//                Intent intent2=new Intent(Forward.this, MainActivity.class);
-//                //启动
-//                startActivity(intent2);
-//                break;
             case R.id.datetrue:
+                btn_true.setText("已签到");
                 Toast toast=Toast.makeText(getApplicationContext(), "签到成功", Toast.LENGTH_SHORT);
                 toast.show();
+                Intent intent = new Intent();
+                intent.putExtra("data","true");
+                MineActivity_signup.this.setResult(11,intent);
+                MineActivity_signup.this.finish();
                 break;
         }
     }
@@ -97,7 +93,7 @@ public class MineActivity_signup extends AppCompatActivity {
      * 设置日期 利用StringBuffer追加
      */
     public void display() {
-        dateDisplay.setText(new StringBuffer().append(mMonth + 1).append("-").append(mDay).append("-").append(mYear).append(" "));
+        dateDisplay.setText(new StringBuffer().append(mYear + 1).append("-").append(mMonth).append("-").append(mDay).append(" "));
     }
     private DatePickerDialog.OnDateSetListener mdateListener = new DatePickerDialog.OnDateSetListener() {
         @Override

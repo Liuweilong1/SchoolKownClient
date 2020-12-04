@@ -77,19 +77,22 @@
             android:layout_marginTop="15dp"
             android:orientation="vertical"
             android:layout_alignParentLeft="true">
+
             <Button
                 android:id="@+id/btn_signIn"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:background="@drawable/mine_signin"/>
+                android:background="@drawable/mine_signin_blue"/>
+
             <TextView
+                android:id="@+id/tv_signIn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:layout_marginTop="13dp"
                 android:text="签到"
-                android:textSize="16sp"
                 android:textColor="@color/black"
-                android:layout_gravity="center_horizontal"/>
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
