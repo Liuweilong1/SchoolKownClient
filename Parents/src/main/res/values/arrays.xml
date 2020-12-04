@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="school_name">
-        <item>希望小学</item>
-        <item>开心小学</item>
-        <item>快乐小学</item>
+        <item>校晓第一小学</item>
+        <item>校晓第二小学</item>
+        <item>校晓第三小学</item>
+    </string-array>
+    <string-array name="grade_name">
+        <item>一年级</item>
+        <item>二年级</item>
+        <item>三年级</item>
+        <item>四年级</item>
+        <item>五年级</item>
+        <item>六年级</item>
     </string-array>
     <string-array name="class_name">
         <item>一班</item>
