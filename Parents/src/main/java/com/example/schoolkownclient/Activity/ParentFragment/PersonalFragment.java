@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
 
 import androidx.annotation.NonNull;
@@ -25,7 +26,7 @@ import com.example.schoolkownclient.R;
 public class PersonalFragment extends Fragment {
     private View view;
     private LinearLayout personinformation;
-    private LinearLayout signup;
+    private Button signup;
     private LinearLayout collections;
     private LinearLayout shop;
     private LinearLayout help;

@@ -23,7 +23,7 @@ public class MineActivity_student extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mine_student);
         //返回跳转
-        ImageView back = findViewById(R.id.mine_back_aboutus);
+        ImageView back = findViewById(R.id.mine_back_student);
         back.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
