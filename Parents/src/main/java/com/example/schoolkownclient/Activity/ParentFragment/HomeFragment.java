@@ -19,6 +19,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 
+import com.example.schoolkownclient.Activity.Apply.SubmitApply;
 import com.example.schoolkownclient.Activity.MainActivity;
 import com.example.schoolkownclient.Activity.MyClassActivity.MemberActivity;
 import com.example.schoolkownclient.Activity.SchoolActivity.ListActivity;
@@ -57,6 +58,7 @@ public class HomeFragment extends Fragment {
     private TextView recipe;
     private TextView activity;
     private TextView attend;
+    private TextView applybtn;
     @Nullable
     @Override
     public View onCreateView(@NonNull final LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -71,6 +73,7 @@ public class HomeFragment extends Fragment {
             recipe=view.findViewById(R.id.home_recipe);
             activity=view.findViewById(R.id.home_activity);
             attend=view.findViewById(R.id.home_attend);
+            applybtn = view.findViewById(R.id.applybtn);
             initArticle();
             articleListView=view.findViewById(R.id.listview_article);
             CustomArticleAdapter customArticleAdapter=new CustomArticleAdapter(getContext(),R.layout.listview_article_item,articles);
@@ -151,6 +154,14 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getContext(), AttendActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        applybtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), SubmitApply.class);
                 startActivity(intent);
             }
         });

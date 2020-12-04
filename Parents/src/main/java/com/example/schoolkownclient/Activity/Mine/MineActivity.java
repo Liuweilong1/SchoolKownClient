@@ -3,6 +3,7 @@ package com.example.schoolkownclient.Activity.Mine;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -43,7 +44,7 @@ public class MineActivity extends AppCompatActivity {
             }
         });
         //签到打卡跳转
-        LinearLayout signup = findViewById(R.id.mine_signup);
+        Button signup = findViewById(R.id.mine_signup);
         signup.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
@@ -105,6 +106,17 @@ public class MineActivity extends AppCompatActivity {
 
                 Intent intent = new Intent();
                 intent.setClass(MineActivity.this,MineActivity_aboutus.class);
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout student = findViewById(R.id.mine_student);
+        student.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent();
+                intent.setClass(MineActivity.this,MineActivity_student.class);
                 startActivity(intent);
             }
         });

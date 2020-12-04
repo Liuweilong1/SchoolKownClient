@@ -9,7 +9,7 @@
         android:orientation="horizontal"
         android:background="#6f79ff">
         <ImageView
-            android:id="@+id/mine_back_signup"
+            android:id="@+id/mine_back_student"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/back2"/>
@@ -22,86 +22,136 @@
             android:textSize="25sp"/>
     </LinearLayout>
     <LinearLayout
-        android:layout_width="403dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal">
-        <View
-            android:layout_width="1dp"
-            android:layout_height="50dp"
-            android:background="@color/colorMainDark"/>
+        android:orientation="vertical">
         <LinearLayout
-            android:layout_width="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
             android:layout_height="50dp"
-            android:background="@drawable/edit_color_mine">
+            android:background="@drawable/edit_circle_shape">
+
+            <TextView
+                android:text="学生姓名"
+                android:textSize="20dp"
+                android:textColor="@color/colorMain"
+                android:layout_weight="1"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="40dp"
-                android:textColor="@color/colorMainDark"
-                android:textSize="20dp"
-                android:text="学生学校"/>
+                android:layout_marginRight="30dp"
+                android:text="李校晓"
+                android:textSize="18dp" />
         </LinearLayout>
-        <View
-            android:layout_width="1dp"
-            android:layout_height="50dp"
-            android:background="@color/colorMainDark"/>
         <LinearLayout
-            android:layout_width="200dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
             android:layout_height="50dp"
-            android:background="@drawable/edit_color_mine">
+            android:background="@drawable/edit_circle_shape">
+
+            <TextView
+                android:text="性别"
+                android:textSize="20dp"
+                android:textColor="@color/colorMain"
+                android:layout_weight="1"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="40dp"
-                android:textColor="@color/colorMainDark"
-                android:textSize="20dp"
-                android:text="学生班级"/>
+                android:layout_marginRight="30dp"
+                android:text="男"
+                android:textSize="18dp" />
         </LinearLayout>
-        <View
-            android:layout_width="1dp"
-            android:layout_height="50dp"
-            android:background="@color/colorMainDark"/>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="70dp"
+            android:background="@drawable/edit_circle_shape">
+
+            <TextView
+                android:text="所属学校"
+                android:textSize="20dp"
+                android:textColor="@color/colorMain"
+                android:layout_weight="1"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <Spinner
+                android:prompt="@string/school_label"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:entries="@array/school_name"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="70dp"
+            android:background="@drawable/edit_circle_shape">
+
+            <TextView
+                android:text="所属年级"
+                android:textSize="20dp"
+                android:textColor="@color/colorMain"
+                android:layout_weight="1"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <Spinner
+                android:prompt="@string/grade_label"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:entries="@array/grade_name"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="70dp"
+            android:background="@drawable/edit_circle_shape">
+
+            <TextView
+                android:text="所属班级"
+                android:textSize="20dp"
+                android:textColor="@color/colorMain"
+                android:layout_weight="1"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <Spinner
+                android:prompt="@string/class_label"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:textAlignment="center"
+                android:entries="@array/class_name"
+                />
+        </LinearLayout>
 
     </LinearLayout>
-    <LinearLayout
-        android:layout_width="403dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center">
-        <View
-            android:layout_width="1dp"
-            android:layout_height="50dp"
-            android:background="@color/colorMainDark"/>
-        <Spinner
-            android:id="@+id/city"
-            android:prompt="@string/school_label"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:textAlignment="center"
-            android:entries="@array/school_name"
-        />
-        <View
-            android:layout_width="1dp"
-            android:layout_height="50dp"
-            android:background="@color/colorMainDark"/>
-        <Spinner
-            android:id="@+id/area"
-            android:prompt="@string/class_label"
-            android:layout_width="200dp"
-            android:layout_height="50dp"
-            android:textAlignment="center"
-            android:entries="@array/class_name"
-            />
-        <View
-            android:layout_width="1dp"
-            android:layout_height="50dp"
-            android:background="@color/colorMainDark"/>
 
-    </LinearLayout>
 
 </LinearLayout>

@@ -40,6 +40,7 @@
     <string name="smsdemo_authorize_dialog_accept">同意</string>
 
     <string name="school_label">学生学校</string>
-    <string name="class_label">学生班级</string>
+    <string name="class_label">学生年级</string>
+    <string name="grade_label">学生班级</string>
 
 </resources>
